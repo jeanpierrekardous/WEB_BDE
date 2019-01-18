@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/polices/Roboto-Thin.woff') format('woff'),
+}
+body{
+	margin: 0;
+}
+html{
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #EBEAEB;
+}

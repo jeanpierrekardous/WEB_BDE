@@ -1,0 +1,164 @@
+#headerHome{
+	width: 100%;
+	height: 200px;
+	background-color: #000000;
+	font-weight: bold;
+}
+#flexboxmenu{
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 2%;
+}
+#font{
+	color: white;
+}
+#flexboxmenu li{
+	list-style-type: none;
+	margin-right: 1%;
+	margin-top: 1%;
+}
+#flexboxmenu li:hover{
+	color: rgb(255, 194, 82);
+}
+#titlePresentation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 10%;
+}
+#logo{
+	float: left;
+	display: flex;
+	width: 134px;
+	height: 134px;
+	margin-top: 29px;
+	margin-left: 58px;
+}
+#headerLink{
+	background-color: #000000;
+	color: white;
+	margin-top: 100px;
+	font-size: 12px;
+}
+.second{
+	text-align: center;
+	margin: 0 0 2% 0;
+	padding-top: 1%;
+	font-size: 1.6em;
+}
+#image{
+	display: flex;
+	justify-content: center;
+}
+#image a img{
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+.picturesbody{
+	width: 280px;
+	height: 280px;
+	border: 2px solid #000000;
+}
+#bodyprincipal{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#bodyprincipal article{
+	padding: 1%;
+	margin: 2% 0 2% 0;
+	padding: 3%;
+	border: 5px double #000000;
+	box-shadow: 5px 5px 10px #000000;
+	border-radius: 10px;
+	background-color: #E0E0DF;
+}
+#bodyprincipal article img{
+	background-color: white;
+	border-radius: 10px;
+}
+#bodyprincipal article img:hover{
+	box-shadow: 5px 5px 10px #000000;
+}
+.namecategory{
+	font-size: 1.7em;
+	text-align: center;
+	border: 2px solid #000000;
+	padding: 3%;
+	margin: 0;
+	color: #000000;
+	background-color: rgb(255, 194, 82);
+	border-radius: 10px;
+}
+#bodyprincipal a{
+	text-decoration: none;
+}
+.namecategory:hover{
+	background-color: #FFE280;
+}
+#body{
+	display: flex;
+	justify-content: flex-start;
+}
+#band{
+	background-color: #000000;
+	width: 250px;
+}
+#band ul li{
+	list-style-type: none;
+	border-top: 1px solid #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 18.4px 27px 18.4px 16px;
+}
+#band ul a{
+	text-decoration: none;
+	color: white;
+}
+#band ul li a:hover{
+	color: rgb(255, 194, 82);
+}
+#band ul{
+	margin: 0;
+}
+#bodermake{
+	border-bottom: 1px solid #ffffff;
+}
+#footerHome{
+	background-color: #000000;
+	display: flex;
+	justify-content:space-around;
+}
+.information_legal{
+	margin: 80px 0 80px 0;
+	text-align: center;
+	padding: 20px;
+	display: flex;
+	border-radius: 10px;
+	flex-direction: column;
+	justify-content: center;
+}
+.information_legal:hover{
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
+}
+#legalMention{
+	text-decoration: none;
+	color: #ffffff;
+}
+.delimitor{
+	color: #000000;
+	border-right: 1px solid #ffffff;
+	height: 70px;
+	margin: auto 0 auto 0;
+}
+#flexboxmenu li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+#flexboxmenu li a:hover{
+	color: rgb(255, 194, 82);
+}
