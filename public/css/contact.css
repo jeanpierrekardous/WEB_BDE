@@ -7,7 +7,6 @@
 	color: #000000;
 	margin: 20px 0 20px 0;
 }
-
 #formContact{
 	display: flex;
 	flex-direction: column;
@@ -16,40 +15,43 @@
 	padding: 20px;
 	border-radius: 0 0 10px 10px;
 	align-items: center;
+	background-color: #E0E0DF;
+	box-shadow: 5px 5px 10px #000000;
 
 }
-
 #contactTittle{
 	background-color: #5B88D9;
 	border-radius: 10px 10px 0 0;
 	padding: 22px;
 	margin: 0;
 	width: 30%;
+	box-shadow: 5px 7px 10px #000000;
 }
-
 #submit{
 	background-color: #5B88D9;
 	color: white;
 	border-radius: 10px;
 	padding: 10px;
 	margin-top: 10px;
+	border: 1px solid #5B88D9;
+}
+#submit:hover{
+	cursor: pointer;
+	background-color: #5B88FF;
 }
 #email{
 	width: 300px;
 	height: 25px;
 	text-align: center;
 }
-
 #subject{
 	width: 300px;
 	height: 25px;
 }
-
 #contactMessage{
 	width: 300px;
 	height: 200px;
 }
-
 #formContact label{
 	margin: 10px 0 10px 0;
 }
