@@ -1,0 +1,55 @@
+#contactBDE{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	color: #000000;
+	margin: 20px 0 20px 0;
+}
+
+#formContact{
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #5B88D9;
+	width: 30%;
+	padding: 20px;
+	border-radius: 0 0 10px 10px;
+	align-items: center;
+
+}
+
+#contactTittle{
+	background-color: #5B88D9;
+	border-radius: 10px 10px 0 0;
+	padding: 22px;
+	margin: 0;
+	width: 30%;
+}
+
+#submit{
+	background-color: #5B88D9;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 10px;
+}
+#email{
+	width: 300px;
+	height: 25px;
+	text-align: center;
+}
+
+#subject{
+	width: 300px;
+	height: 25px;
+}
+
+#contactMessage{
+	width: 300px;
+	height: 200px;
+}
+
+#formContact label{
+	margin: 10px 0 10px 0;
+}
