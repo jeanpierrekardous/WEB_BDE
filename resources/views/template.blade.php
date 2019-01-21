@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/general.css">
 		<link rel="stylesheet" type="text/css" href="css/contact.css">
 		<link rel="stylesheet" type="text/css" href="css/signup.css">
+		<link rel="stylesheet" type="text/css" href="css/info.css">
     	@yield('title')
     </head>
     <body id="font">
