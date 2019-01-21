@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/signup.css">
 		<link rel="stylesheet" type="text/css" href="css/info.css">
 		<link rel="stylesheet" type="text/css" href="css/help.css">
+		<link rel="stylesheet" type="text/css" href="css/legalmention.css">
     	@yield('title')
     </head>
     <body id="font">

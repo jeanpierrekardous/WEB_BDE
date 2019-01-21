@@ -14,7 +14,12 @@ class SignupRequest extends FormRequest
     public function rules()
     {
         return [
-            
+            '' => '',
+            '' => '',
+            '' => '',
+            '' => '',
+            '' => '',
+            '' => ''
         ];
     }
 }
