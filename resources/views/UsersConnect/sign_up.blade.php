@@ -6,7 +6,7 @@
 
 @section('contenu')
 	<section id="signup">
-		<h1>Vous identifier</h1>
+		<h1 id="titleSignup">Vous identifier</h1>
 		{!! Form::open(['url' => 'signup', 'id' => 'signupForm']) !!}
 			{!! Form::label('firstname', 'Votre Prénom') !!}
 			{!! Form::text('firstname', null, array('autocomplete' => 'off', 'id' => 'firstname', 'spellcheck' => 'false')) !!}
