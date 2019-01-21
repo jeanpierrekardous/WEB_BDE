@@ -32,5 +32,7 @@
 
 #lastTexte{
 	margin: 0px 0 80px 0;
+	text-align: justify;
+	justify-content: center;
 
 }
