@@ -28,3 +28,4 @@ Route::get('help', function() {
 });
 
 Route::get('contact', 'ContactController@getContact');
+Route::post('contact', 'ContactController@postContact');
