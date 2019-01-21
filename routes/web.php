@@ -20,4 +20,3 @@ Route::get('login', function() {
 Route::get('signup', function() {
 	return view('UsersConnect/sign_up');
 });
-Route::get('contact', 'ContactController@getContact');
