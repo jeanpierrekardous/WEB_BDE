@@ -8,7 +8,7 @@
 		<section id="signup">
 		<h1 id="titleSignup">Vous identifier</h1>
 		{!! Form::open(['url' => 'signup', 'id' => 'signupForm']) !!}
-			{!! Form::label('firstname', 'Votre Prénom') !!}
+			{!! Form::label('firstname', 'Votre Prénom :') !!}
 			{!! Form::text('firstname', null, array('autocomplete' => 'off', 'id' => 'firstname', 'spellcheck' => 'false')) !!}
 			{!! Form::label('name', 'Votre Nom :') !!}
 			{!! Form::text('name', null, array('autocomplete' => 'off', 'id' => 'name', 'spellcheck' => 'false')) !!}
