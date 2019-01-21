@@ -19,10 +19,13 @@ Route::get('login', function() {
 });
 Route::get('signup', function() {
 	return view('UsersConnect/sign_up');
+<<<<<<< HEAD
 });
 Route::get('info', function() {
 	return view('Help/info');
 });
 Route::get('help', function() {
 	return view('Help/help');
+=======
+>>>>>>> parent of a7f925f... ok
 });
