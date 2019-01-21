@@ -20,6 +20,6 @@
 		<p class="helpTexte"> Bien sûr, lorsque vous ajoutez des articles dans le panier, celui-ci sauvegarde automatiquement. Ceci signifie donc que si vous quittez la page sans valider, vous retrouverez vos articles dans le panier lors de votre prochaine connexion sur la page.</p>
 
 		<h3 class="secondTittle">Est-il possible de se connecter avec Facebook ?</h3><br />
-		<p class="helpTexte"> Malheureusement, il est impossible de se connecter avec un réseau social quel qu'il soit. Ceci est due au fait que nous voulions des informations complètes et sérieuses.</p>
+		<p id="lastTexte"> Malheureusement, il est impossible de se connecter avec un réseau social quel qu'il soit. Ceci est due au fait que nous voulions des informations complètes et sérieuses.</p>
 	</section>
 @endsection
