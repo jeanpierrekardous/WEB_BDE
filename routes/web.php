@@ -26,6 +26,9 @@ Route::get('info', function() {
 Route::get('help', function() {
 	return view('Help/help');
 });
+Route::get('right', function(){
+	return view('Right/right');
+});
 
 Route::get('contact', 'ContactController@getContact');
 Route::post('contact', 'ContactController@postContact');
