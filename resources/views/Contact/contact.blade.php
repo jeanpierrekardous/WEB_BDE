@@ -13,7 +13,7 @@
 			{!! Form::label('subject', 'Objet du mail :') !!}
         	{!! Form::text('subject', null , array('required' => 'required', 'id' => 'subject')) !!}
         	{!! Form::label('bodies', 'Message :') !!}
-        	{!! Form::text('bodies', null , array('required' => 'required', 'id' => 'contactMessage')) !!}
+        	{!! Form::textarea('bodies', null , array('required' => 'required', 'id' => 'contactMessage')) !!}
 			{!! Form::submit('Envoyer !', ['id' => 'submit']) !!}
         {!! Form::close() !!}
 	</section>
