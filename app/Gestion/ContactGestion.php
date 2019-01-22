@@ -19,6 +19,8 @@ class ContactGestion
 		Mail::send('Contact/contactResponse', $request->all(), function($message) use ($request){
             $message->to($request['email'])->subject('response');
 		});
+
+		return true;
 	}
 }
 ?>
