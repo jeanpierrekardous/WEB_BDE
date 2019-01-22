@@ -18,5 +18,11 @@ class SignupController extends Controller
 
     	$result = $gestion->analyse($request);
 
+    	if($result){
+    		return redirect('/');
+    	}
+    	else{
+    		return redirect('contact');
+    	}
     }
 }

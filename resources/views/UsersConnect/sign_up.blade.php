@@ -23,9 +23,14 @@
 	           <option value="Nantes">Nantes</option>
        		</select>
        		{!! Form::label('password', 'Mot de passe :') !!}
+       		{!! Form::label('password', '(Une Majuscule et un nombre au minimum)') !!}
        		<input type="password" name="password" id='password'>
-       		{!! Form::label('password_confirmation', 'Mot de passe :') !!}
+       		{!! Form::label('password_confirmation', 'Vérification du mot de passe :') !!}
        		<input type="password" name="password_confirmation" id='password_confirmation'>
+       		{!! $errors->first('password','<p class="help">Mot de passe non-identique</p>') !!}
+       		{!! $errors->first('email','<p class="help">Email non-valide</p>') !!}
+       		{!! $errors->first('name','<p class="help">Nom non-valide</p>') !!}
+       		{!! $errors->first('firstname','<p class="help">Prénom non-valide</p>') !!}
 			{!! Form::submit('S\'inscrire !', ['id' => 'submitSignup']) !!}
 		{!! Form::close() !!}
 	</section>

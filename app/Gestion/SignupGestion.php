@@ -2,13 +2,16 @@
 
 namespace App\Gestion;
 
+use Illuminate\Support\Facades\DB;
+
 class SignupGestion
 {
 	public function analyse($request)
 	{
-		echo $request['email'];
+
+		DB::connection('mysql2')->statement('CALL insertUsers(?,?,?,?,?,?)', [$request['email'], $request['name'], $request['firstname'], $request['password'], 'visiteur', $request['country']]);
+
+		return true;
 	}
 }
-
-
 ?>

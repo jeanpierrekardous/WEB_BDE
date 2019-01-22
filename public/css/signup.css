@@ -35,6 +35,9 @@ input, select{
 select{
 	font-size: 1.4em;
 }
+.must{
+	color: red;
+}
 #signupForm label{
 	padding: 10px;
 }
@@ -55,4 +58,11 @@ select{
 #submitSignup:hover{
 	cursor: pointer;
 	background-color: #5B88FF;
+}
+.help{
+	color: red;
+	font-weight: bold;
+}
+#formcontainer{
+	margin: 0;
 }
