@@ -21,7 +21,7 @@
             </a>
         </article>
         <article id="event">
-            <a href="event">
+            <a href="events">
                 <img src="fonts/pictures/logo_event.png" class="picturesbody" alt="pictures_event">
                 <h3 class="namecategory">&Eacute;venements</h3>
             </a>

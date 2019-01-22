@@ -28,14 +28,5 @@
        		<input type="password" name="password_confirmation" id='password_confirmation'>
 			{!! Form::submit('S\'inscrire !', ['id' => 'submitSignup']) !!}
 		{!! Form::close() !!}
-		<?php
-		if (isset($_POST['password']) AND isset($_POST['password_confirmation'])) {
-			if ($_POST['password'] != $_POST['password_confirmation']) {
-		?>
-				<p id="error">Mots de passe non-identique</p>
-		<?php
-			}
-		}
-		?>
 	</section>
 @endsection
