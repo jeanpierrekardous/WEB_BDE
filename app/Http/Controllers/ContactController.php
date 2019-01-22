@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Http\Requests\ContactRequest;
+use App\Http\Requests\ContactRequest;
+use App\Gestion\ContactGestion;
 
 class ContactController extends Controller
 {
@@ -12,12 +13,15 @@ class ContactController extends Controller
     	return view('Contact/contact');
     }
 
-    public function postContact(ContactRequest $request){
+    public function postContact(ContactRequest $request, ContactGestion $gestion){
 
-    	Mail::send('email_contact', $request->all(), function($message){
-    		$message->to('corentin.brion@viacesi.fr');
-    	});
+    	$result = $gestion->sendContact($request);
 
-    	return view('confirm');
+    	if ($result) {
+    		return view('Contact/ContactGood');
+    	}
+    	else{
+    		return view('Contact/ContactBad');
+    	}
     }
 }

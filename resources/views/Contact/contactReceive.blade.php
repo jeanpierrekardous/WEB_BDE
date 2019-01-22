@@ -1,16 +1,19 @@
-@extends('template')
-
-@section('tittle')
-	<title>Contact</title>
-@endsection
-
-@section('contenu')
-	<section id="contactBDE">
-		<h1 id="contactTittle">Nous contacter</h1>
-		<p>
-			Message envoyé rechargé la page si vous souhaité en envoyer un autre.<br>
-			Nous tacherons de vous répondre au plus vite. <br>
-			Bonne journée.	
-		</p>
-	</section>
-@endsection
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Contact</title>
+	</head>
+	<body>
+		<section id="contactBDE">
+			<h1 id="contactTittle">Nous contacter</h1>
+			<p>
+				une demande de contacte a été effectué !<br>
+				email : {{$email}} <br>
+				le message est le suivant :<br>
+				{{$bodies}}	
+			</p>
+		</section>
+	</body>
+</html>
+	
