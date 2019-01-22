@@ -22,7 +22,7 @@ class SignupController extends Controller
     		return redirect('/');
     	}
     	else{
-    		return redirect('contact');
+    		return redirect('signup');
     	}
     }
 }

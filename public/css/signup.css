@@ -38,6 +38,9 @@ select{
 .must{
 	color: red;
 }
+label{
+	font-weight: bold;
+}
 #signupForm label{
 	padding: 10px;
 }

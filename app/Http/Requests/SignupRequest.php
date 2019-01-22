@@ -18,7 +18,7 @@ class SignupRequest extends FormRequest
             'name' => 'required',
             'email' => 'required|email',
             'country' => 'required',
-            'password' => 'required|alpha_num|confirmed',
+            'password' => 'required|alpha_num|confirmed|regex:^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,20}$^',
             'password_confirmation' => 'required|alpha_num'
         ];
     }

@@ -34,6 +34,9 @@ Route::get('right', function(){
 Route::get('contact', 'ContactController@getContact');
 Route::post('contact', 'ContactController@postContact');
 
+Route::get('idea', 'IdeaController@getIdea');
+Route::post('idea', 'IdeaController@postIdea');
+
 Route::get('events', function(){
 	return view('Events/events');
 });
