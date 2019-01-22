@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Request\SignupRequest;
-use Illuminate\Gestion\SignupGestion;
+use App\Http\Requests\SignupRequest;
+use App\Gestion\SignupGestion;
 
 class SignupController extends Controller
 {
@@ -15,8 +15,7 @@ class SignupController extends Controller
     }
 
     public function postForm(SignupRequest $request, SignupGestion $gestion){
-    	
-    	echo "patate";
+
     	$result = $gestion->analyse($request);
 
     }

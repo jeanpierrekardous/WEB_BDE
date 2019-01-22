@@ -39,7 +39,7 @@
 			    <ul>
 			        <li><a href="info"><i class="fas fa-info"></i> INFORMATIONS</a></li>
 			        <li><a href="idea"><i class="far fa-lightbulb"></i> BOITE A IDEES</a></li>
-			        <li><a href="event"><i class="far fa-calendar-alt"></i> &Eacute;VENEMENTS</a></li>
+			        <li><a href="events"><i class="far fa-calendar-alt"></i> &Eacute;VENEMENTS</a></li>
 			        <li><a href="shop"><i class="fas fa-shopping-cart"></i> BOUTIQUE</a></li>
 			        <li id="bodermake"><a href="contact"><i class="fas fa-envelope"></i> CONTACT</a></li>
 			    </ul>
