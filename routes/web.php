@@ -33,3 +33,7 @@ Route::get('right', function(){
 
 Route::get('contact', 'ContactController@getContact');
 Route::post('contact', 'ContactController@postContact');
+
+Route::get('events', function(){
+	return view('Events/events');
+});
