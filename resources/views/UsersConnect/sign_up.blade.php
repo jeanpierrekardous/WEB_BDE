@@ -8,13 +8,13 @@
 		<section id="signup">
 		<h1 id="titleSignup">Vous identifier</h1>
 		{!! Form::open(['url' => 'signup', 'id' => 'signupForm']) !!}
-			{!! Form::label('firstname', 'Votre Prénom :') !!}
+			{!! Form::label('firstname', 'Entrer votre prénom :') !!}
 			{!! Form::text('firstname', null, array('autocomplete' => 'off', 'id' => 'firstname', 'spellcheck' => 'false')) !!}
-			{!! Form::label('name', 'Votre Nom :') !!}
+			{!! Form::label('name', 'Entrer votre nom :') !!}
 			{!! Form::text('name', null, array('autocomplete' => 'off', 'id' => 'name', 'spellcheck' => 'false')) !!}
-			{!! Form::label('email', 'Votre Email :') !!}
+			{!! Form::label('email', 'Entrer votre Email :') !!}
 			{!! Form::email('email', null , array('autocomplete' => 'off', 'id' => 'emailSignup', 'placeholder' => 'Votre email', 'spellcheck' => 'false')) !!}
-			{!! Form::label('country', 'Votre centre :') !!}
+			{!! Form::label('country', 'Quelle est votre centre ?') !!}
 			<select name="country" id="country">
 	           <option value="Lyon">Lyon</option>
 	           <option value="Paris">Paris</option>
@@ -24,8 +24,8 @@
        		</select>
        		{!! Form::label('password', 'Mot de passe :') !!}
        		<input type="password" name="password" id='password'>
-       		{!! Form::label('verifpassword', 'Mot de passe :') !!}
-       		<input type="password" name="verifpassword" id='verifpassword'>
+       		{!! Form::label('password_confirmation', 'Mot de passe :') !!}
+       		<input type="password" name="password_confirmation" id='password_confirmation'>
 			{!! Form::submit('S\'inscrire !', ['id' => 'submitSignup']) !!}
 		{!! Form::close() !!}
 	</section>

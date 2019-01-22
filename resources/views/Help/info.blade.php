@@ -22,6 +22,6 @@
 		//Membres à rajouter//
 		<h2 class="secondTittle">Où nous trouver ? </h2>
 		<p class="infoTexte"><i class="fas fa-map-marked"></i>19 Avenue Guy de Collongue 69130 Écully.</p>
-		<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.763777554035188%2C45.782466764985315%2C4.767318069934846%2C45.78417640398581&amp;layer=mapnik" style="border: 1px solid black; margin-bottom: 30px;"></iframe><br/>
+		<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.7644293308258066%2C45.782666911429075%2C4.766939878463746%2C45.78397439248092&amp;layer=mapnik&amp;marker=45.78332065578796%2C4.765684604644775" style="border: 1px solid black; margin-bottom: 30px;"></iframe><br/>
 	</section>
 @endsection
