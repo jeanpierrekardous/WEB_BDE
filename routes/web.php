@@ -17,9 +17,10 @@ Route::get('/', function () {
 Route::get('login', function() {
 	return view('UsersConnect/login');
 });
-Route::get('signup', function() {
-	return view('UsersConnect/sign_up');
-});
+
+Route::get('signup', 'SignupController@getForm');
+Route::post('signup', 'SignupController@postForm');
+
 Route::get('info', function() {
 	return view('Help/info');
 });
