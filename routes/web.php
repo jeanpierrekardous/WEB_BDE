@@ -45,3 +45,7 @@ Route::post('idea', 'IdeaController@postIdea');
 Route::get('events', function(){
 	return view('Events/events');
 });
+
+Route::get('CGV', function(){
+	return view('CGV/cGV');
+});

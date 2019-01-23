@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/legalmention.css">
 		<link rel="stylesheet" type="text/css" href="css/events.css">
 		<link rel="stylesheet" type="text/css" href="css/idea.css">
+		<link rel="stylesheet" type="text/css" href="css/cGV.css">
     	@yield('title')
     </head>
     <body id="font">
@@ -76,9 +77,9 @@
     	</section>
 		<!-- Footer with the legal mentions, the phone number if you have problems and the copyright -->
 		<footer id="footerHome">
-		    <p class="information_legal">
-		        Numero de téléphone : 06.86.38.36.62
-		    </p>
+		    <a href="CGV" id="legalMention"><p class="information_legal">
+		       Condition générale de vente
+		    </p></a> 
 		    <p class="delimitor">
 		        &nbsp;
 		    </p>

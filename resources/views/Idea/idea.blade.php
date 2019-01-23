@@ -10,7 +10,7 @@
 		<a href="" id="addIdea">Ajouter un évenement</a>
 	</section>
 	<section id="ideaBox">
-		
+		<h1 id="ideaSecondTittle">Boîtes à idées</h1>
 	</section>
 
 @endsection
