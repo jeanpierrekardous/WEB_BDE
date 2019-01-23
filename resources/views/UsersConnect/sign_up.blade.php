@@ -5,7 +5,7 @@
 @endsection
 
 @section('contenu')
-		<section id="signup">
+	<section id="signup">
 		<h1 id="titleSignup">Vous identifier</h1>
 		{!! Form::open(['url' => 'signup', 'id' => 'signupForm']) !!}
 			{!! Form::label('firstname', 'Entrer votre prénom :') !!}
