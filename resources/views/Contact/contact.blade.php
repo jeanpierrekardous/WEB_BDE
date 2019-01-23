@@ -22,6 +22,9 @@
         	{!! Form::label('bodies', 'Message :') !!}
         	<!-- Square link with label 'bodies' if we write a message on this we send a mail with this message. -->
         	{!! Form::textarea('bodies', null , array('required' => 'required', 'id' => 'contactMessage')) !!}
+
+        	{!! $errors->first('subject','<p class="help">:message</p>') !!}
+        	{!! $errors->first('bodies','<p class="help">:message</p>') !!}
         	<!-- create a button and send the mail with the information write in the square. -->
 			{!! Form::submit('Envoyer !', ['id' => 'submit']) !!}
         {!! Form::close() !!}

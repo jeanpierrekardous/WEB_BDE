@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
-class ContactController extends Controller
+class IdeaController extends Controller
 {
     public function getIdea(){
 
-    	return view('Contact/contact');
+    	return view('Idea/idea');
     }
 
     public function postIdea(){

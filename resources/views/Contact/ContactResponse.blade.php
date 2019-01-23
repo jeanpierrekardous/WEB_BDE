@@ -6,7 +6,8 @@
 </head>
 <body>
 	<p>
-		votre demande de contacte a bien été envoyée
+		Votre message est arrive à destination.<br>
+		Bonne journée.
 	</p>
 
 </body>
