@@ -14,9 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('login', function() {
-	return view('UsersConnect/login');
-});
+Route::get('login', 'LoginController@getLoginForm');
+Route::post('login', 'LoginController@postLoginForm');
 
 Route::get('signup', 'SignupController@getForm');
 Route::post('signup', 'SignupController@postForm');

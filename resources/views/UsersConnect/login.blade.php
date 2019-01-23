@@ -14,7 +14,7 @@
        		<input type="password" name="password" id='password'>
        		{!! $errors->first('email','<p class="help">:message</p>') !!}
        		{!! $errors->first('password','<p class="help">:message</p>') !!}
-       		{!! Form::submit('S\'inscrire !', ['id' => 'submitSignup']) !!}
+       		{!! Form::submit('Se connecter !', ['id' => 'submitSignup']) !!}
 		{!! Form::close() !!}
 	</section>
 @endsection
