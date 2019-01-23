@@ -65,6 +65,7 @@ label{
 .help{
 	color: red;
 	font-weight: bold;
+	text-align: center;
 }
 #formcontainer{
 	margin: 0;

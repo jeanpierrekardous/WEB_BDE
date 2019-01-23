@@ -64,7 +64,7 @@
 }
 #contactTexte{
 	margin: 0;
-	border: 2px solid #5B88D9;
+	border: 2px solid rgb(260, 199, 0);
 	border-radius: 0 0 10px 10px;
 	display: flex;
 	flex-direction: column;
