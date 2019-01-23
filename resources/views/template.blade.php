@@ -22,8 +22,19 @@
 		    <nav id="menu">
 		        <ul id="flexboxmenu">
 		            <!-- Menu(login...) -->
-		            <li><a href="login">Connexion</a></li>
-		            <li><a href="signup">Inscription</a></li>
+		            <?php
+					if(empty(session('email'))){
+					?>
+						<li><a href="login">Connexion</a></li>
+		            	<li><a href="signup">Inscription</a></li>
+		            <?php
+					}
+					else{
+					?>
+						<li><a href="logout">Déconnexion</a></li>
+					<?php
+					}
+					?>
 		            <li><a href="help">Aide <i class="fas fa-question-circle"></i></a></li>
 		        </ul>
 		    </nav>

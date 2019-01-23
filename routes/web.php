@@ -20,6 +20,12 @@ Route::post('login', 'LoginController@postLoginForm');
 Route::get('signup', 'SignupController@getForm');
 Route::post('signup', 'SignupController@postForm');
 
+Route::get('logout', function(){
+	session()->forget('email');
+	session()->flush();
+	return redirect('/');
+});
+
 Route::get('info', function() {
 	return view('Help/info');
 });
