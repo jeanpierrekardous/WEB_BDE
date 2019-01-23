@@ -19,7 +19,8 @@ class LoginController extends Controller
     	$result = $gestion->connect($request);
 
     	if ($result) {
-    		
+
+    		return redirect('/');
     	}
     	else{
     		return view('UsersConnect/wrongLogin');
