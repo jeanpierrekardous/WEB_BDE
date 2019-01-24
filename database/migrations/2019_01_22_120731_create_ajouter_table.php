@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIdeeTable extends Migration
+class CreateAjouterTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateIdeeTable extends Migration
      */
     public function up()
     {
-        //Here, we create the table "Idee"
-        Schema::create('idee', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nom', 50);
-            $table->string('description', 50);
-            $table->integer('vote');
-            $table->string('image', 50);
+        Schema::create('ajouter', function (Blueprint $table) {
+            $table->integer('IDInscription');
+            $table->integer('IDArticle');
+            $table->foreign('IDInscription')->references('id')->on('utilisateur');
+            $table->foreign('IDArticle')->references('id')->on('article');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateIdeeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('idee');
+        Schema::dropIfExists('ajouter');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCommentaireTable extends Migration
+class CreatePhotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateCommentaireTable extends Migration
      */
     public function up()
     {
-        Schema::create('commentaire', function (Blueprint $table) {
+        Schema::create('photos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('commentaire', 50);
+            $table->integer('IDInscription');
+            $table->integer('IDEvent');
+            $table->foreign('IDEvent')->references('id')->on('evenement_officiel');
+            $table->foreign('IDInscription')->references('id')->on('utilisateur');
+            $table->integer('likes');
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateCommentaireTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('commentaire');
+        Schema::dropIfExists('photos');
     }
 }
