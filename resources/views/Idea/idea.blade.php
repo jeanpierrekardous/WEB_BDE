@@ -8,9 +8,9 @@
 	<section id="ideaGroup">
 		<h1 id="ideaTittle">Boîtes à idées</h1>
 		<a href="" id="addIdea">Ajouter un évenement</a>
-	</section>
-	<section id="ideaBox">
-		<h1 id="ideaSecondTittle">Boîtes à idées</h1>
+		<article id="ideaBox">
+			<h1 id="ideaSecondTittle">Liste des idées proposées</h1>
+		</article>
 	</section>
 
 @endsection

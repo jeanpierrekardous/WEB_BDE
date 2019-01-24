@@ -9,16 +9,15 @@
 #ideaGroup{
 	color: #000000;
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
-	margin: auto;
-	width: 50%;
-
+	width: 80%;
+	margin: 0 auto 0 auto;
 }
 #addIdea{
-	margin: 20px 0 0 0;
+	margin: 20px 0 20px 0;
 	border: 2px solid #5B88D9;
 	display: flex;
 	flex-direction: column;
@@ -35,15 +34,19 @@
 	background-color: #5B88FF;
 }
 #ideaBox{
-
-}
-#ideaSecondTittle{
 	color: #000000;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	margin: auto;
-	width: 50%;
+	width: 100%;
+}
+#ideaSecondTittle{
+	font-size: 2.3em;
+	background-color: rgb(255, 194, 82);
+	font-weight: bold;
+	padding: 10px;
+	width: 100%;
+	margin: 0;
 }
