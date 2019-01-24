@@ -7,10 +7,22 @@
 @section('contenu')
 	<section id="ideaGroup">
 		<h1 id="ideaTittle">Boîtes à idées</h1>
-		<a href="" id="addIdea">Ajouter un évenement</a>
+		<a href="writeidea" id="addIdea">Ajouter un évenement</a>
 		<article id="ideaBox">
 			<h1 id="ideaSecondTittle">Liste des idées proposées</h1>
 			<!-- ajouter la liste des évenements -->
+			<?php
+			if(empty(session('email'))){
+			?>
+				<p><a href="login">Veuillez-vous connecter !</a></p>
+            <?php
+			}
+			else{
+			?>
+				
+			<?php
+			}
+			?>
 		</article>
 	</section>
 

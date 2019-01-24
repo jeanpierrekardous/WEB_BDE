@@ -49,3 +49,6 @@ Route::get('events', function(){
 Route::get('CGV', function(){
 	return view('CGV/cgv');
 });
+
+Route::get('writeidea', 'WriteideaController@getFormIdea');
+Route::post('writeidea', 'WriteideaController@postFormIdea');
