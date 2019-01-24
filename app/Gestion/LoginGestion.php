@@ -20,6 +20,7 @@ class LoginGestion
 				session(['name' => $sessioncreate[0]->nom . " " . $sessioncreate[0]->prenom]);
 				session(['role' => $sessioncreate[0]->role]);
 				session(['local' => $sessioncreate[0]->localisation]);
+				session(['iduser' => $sessioncreate[0]->id]);
 
 			}
 
