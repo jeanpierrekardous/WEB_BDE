@@ -71,6 +71,13 @@
 	width: 30%;
 	align-items: center;
 	padding: 20px;
-
-
+}
+#files{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	text-align: left;
+	vertical-align: text-top;
 }
