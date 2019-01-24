@@ -31,7 +31,8 @@
 	color: white;
 	border-radius: 10px;
 	padding: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 	border: 1px solid rgb(255, 194, 82);
 	width: 30%;
 	display: flex;
@@ -45,16 +46,16 @@
 	background-color: rgb(260, 199, 0);
 }
 #email{
-	width: 300px;
+	width: 80%;
 	height: 25px;
 	text-align: center;
 }
 #subject{
-	width: 300px;
+	width: 80%;
 	height: 25px;
 }
 #contactMessage{
-	width: 300px;
+	width: 80%;
 	height: 200px;
 	text-align: left;
 	vertical-align: text-top;
@@ -72,12 +73,13 @@
 	align-items: center;
 	padding: 20px;
 }
-#files{
+#filesFormuleText{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	text-align: left;
-	vertical-align: text-top;
+	margin: auto;
+	width: 60%;
+	text-align: center;
+
 }
