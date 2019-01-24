@@ -11,8 +11,4 @@ class IdeaController extends Controller
 
     	return view('Idea/idea');
     }
-
-    public function postIdea(){
-
-    }
 }
