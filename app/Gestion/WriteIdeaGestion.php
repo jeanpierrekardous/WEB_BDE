@@ -7,7 +7,7 @@ class WriteIdeaGestion
 {
 	public function writeIdeaEvent($request)
 	{
-		$chemin = config('image.path');
+		$chemin = config('image.pathEvents');
 		$extension = $request->file('image')->getClientOriginalExtension();
 
 		do{
@@ -17,8 +17,13 @@ class WriteIdeaGestion
 		} while (file_exists($chemin . '/' . $nom));
 
 
-		$request->file('image')->move($chemin, $nom); 
+		$request->file('image')->move($chemin, $nom);
+		$roadFull = $chemin.'/'.$nom;
+
+		$description = $request['description'];
+		$name = $request['nameEvents'];
+		
 	}
-	
+
 }
 ?>

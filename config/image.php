@@ -1,5 +1,6 @@
 <?php
 return [
-    'path' => realpath(base_path('public/fonts/pictures')),
+    'pathEvents' => realpath(base_path('public/fonts/pictures/Events')),
+
 ];
 ?>

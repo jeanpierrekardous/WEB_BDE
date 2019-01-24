@@ -24,9 +24,9 @@ class WriteideaRequest extends FormRequest
     public function rules()
     {
         return [
-            'nameEvents' => 'required|max:30',
+            'nameEvents' => 'required|max:30|alpha_num',
             'description' => 'required|max:10000',
-            'image' => 'required'
+            'image' => 'required|image'
         ];
     }
 }
