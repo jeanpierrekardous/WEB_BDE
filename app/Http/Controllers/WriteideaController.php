@@ -17,6 +17,11 @@ class WriteideaController extends Controller
 
     	$result = $gestion->writeIdeaEvent($request);
 
+    	if($result){
+    		return redirect('/');
+    	}
+    	else{
 
+    	}
     }    
 }

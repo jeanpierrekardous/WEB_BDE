@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Gestion;
-
+use Illuminate\Support\Facades\DB;
 
 class WriteIdeaGestion
 {
@@ -19,9 +19,14 @@ class WriteIdeaGestion
 
 		$request->file('image')->move($chemin, $nom);
 		$roadFull = $chemin.'/'.$nom;
+		$vote = 0;
 
 		$description = $request['description'];
 		$name = $request['nameEvents'];
+
+		$insertinto = DB::connection('mysql3')->statement('CALL writeIdea(?,?,?,?)', [$name, $description, $roadFull, $vote]);
+		
+		return true;
 		
 	}
 
