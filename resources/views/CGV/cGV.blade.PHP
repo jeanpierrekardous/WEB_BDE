@@ -1,6 +1,6 @@
 @extends('template')
 
-@section('tittle')
+@section('title')
 	<title>Conditions générales de ventes</title>
 @endsection
 
