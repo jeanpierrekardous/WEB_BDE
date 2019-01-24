@@ -8,6 +8,7 @@ class IdeaGestion
 {
 	public function listEvents(){
 
+		$events = DB::connection('mysql3')->select('CALL readIdea()');
 
 		return $events;
 	}

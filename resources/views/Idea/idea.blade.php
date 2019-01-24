@@ -30,11 +30,20 @@
 			}
 			else{
 			?>
-				
+				<div id="ideaContent">
+					@foreach ($idea as $idea)
+						@if($idea->nom != null)
+							<article class="ideaListAll">
+								<?php echo $idea->nom; ?>
+								<?php echo $idea->image; ?>
+								<img src="<?php $idea->image; ?>" alt="ImageEvènement">
+							</article>
+						@endif
+					@endforeach
+				</div>
 			<?php
 			}
 			?>
 		</article>
 	</section>
-
 @endsection
