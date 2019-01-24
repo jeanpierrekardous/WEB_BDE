@@ -12,9 +12,14 @@ class LoginGestion
 		
 		if (count($verif) == 1) {
 
+			$sessioncreate = DB::connection('mysql2')->select('CALL createSession(?,?)', [$request['email'], $request['password']]);
+
 			if (empty(session('email'))) {
 
 				session(['email' => $request['email']]);
+				session(['name' => $sessioncreate[0]->nom . " " . $sessioncreate[0]->prenom]);
+				session(['role' => $sessioncreate[0]->role]);
+				session(['local' => $sessioncreate[0]->localisation]);
 
 			}
 

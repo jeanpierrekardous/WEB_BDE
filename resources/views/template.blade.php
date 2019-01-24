@@ -32,6 +32,7 @@
 					}
 					else{
 					?>
+						<li>Bonjour <?php echo session('name'); ?> !</li>
 						<li><a href="logout">Déconnexion</a></li>
 					<?php
 					}
