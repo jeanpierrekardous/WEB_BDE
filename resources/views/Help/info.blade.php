@@ -10,7 +10,7 @@
 		<h2 class="secondTittle">Qui sommes-nous ?</h2>
 		<p class="infoTexte">Le BDE est un groupe de plusieurs étudiants de la première à la dernière année qui se rassemble régulièrement afin de proposer à ces derniers diverses activités. Ces derniers peuvent être proposés par les élèves dans la boîte à idées qui seront par la suite votées. <br />Une fois votée, c'est au BDE de mettre en place l'événement.</p>
 		<h2 class="secondTittle">Quelles activités pouvons nous proposer ? </h2>
-		<ul id="infoDot">
+		<ul class="infoDot">
 			<li>Soirée étudiante</li>
 			<li>Voyages organisés</li>
 			<li>Échanges par correspondance</li>
@@ -19,7 +19,15 @@
 		</ul>
 		<p class="infoTexte">Les membres du BDE sont élus à chaque début d'année scolaire par les étudiants afin de les représenter au cours de l'année.</p>
 		<h2 class="secondTittle">Qui sont les membres ? </h2>
-		//Membres à rajouter//
+			<ul class="infoDot">
+				<li>Belin Paul - Président</li>
+				<li>Victor Lerivray - Vice-président </li>
+				<li>Tiffany Besançon - Trésorière </li>
+				<li>Christelle Fotso - Secrétaire</li>
+				<li>Rawan Abdelsalam - Responsable événement</li>
+				<li>Benjamin Mollon - Responsable communication</li>
+			</ul>
+			
 		<h2 class="secondTittle">Où nous trouver ? </h2>
 		<p class="infoTexte"><i class="fas fa-map-marked"></i>19 Avenue Guy de Collongue 69130 Écully.</p>
 		<!-- api map -->
