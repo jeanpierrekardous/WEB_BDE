@@ -27,11 +27,13 @@
 	justify-content: left;
 	align-items: left;
 	font-size: 1.2em;
-	color: #000000
+	color: #000000;
+	text-decoration: none;
 }
 #addIdea:hover{
 	cursor: pointer;
 	background-color: #5B88FF;
+	text-decoration: none;
 }
 #ideaBox{
 	color: #000000;
