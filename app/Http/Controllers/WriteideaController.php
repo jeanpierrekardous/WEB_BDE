@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Request\WriteideaRequest;
+use App\Http\Requests\WriteideaRequest;
 
 class WriteideaController extends Controller
 {
