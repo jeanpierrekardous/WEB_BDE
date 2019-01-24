@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\WriteideaRequest;
+use App\Gestion\WriteIdeaGestion;
 
 class WriteideaController extends Controller
 {
@@ -12,10 +13,10 @@ class WriteideaController extends Controller
     	return view('Idea/writeIdea');
     }
 
-    public function postFormIdea(WriteideaRequest $request){
+    public function postFormIdea(WriteideaRequest $request, WriteIdeaGestion $gestion){
 
     	$result = $gestion->writeIdeaEvent($request);
-    	
+
 
     }    
 }
