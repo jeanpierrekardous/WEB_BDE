@@ -14,9 +14,8 @@ class WriteideaController extends Controller
 
     public function postFormIdea(WriteideaRequest $request){
 
-    	echo $request['nameEvents'];
-    	echo $request['description'];
-    	echo $request['picture'];
+    	$result = $gestion->writeIdeaEvent($request);
+    	
 
     }    
 }

@@ -12,11 +12,11 @@
 		   		{!! Form::text('nameEvents', null , array('required' => 'required', 'id' => 'subject')) !!}
 		   		{!! Form::label('description', 'description de l\'événement :') !!}
 		   		{!! Form::textarea('description', null , array('required' => 'required', 'id' => 'contactMessage')) !!}
-		   		{!! Form::label('picture', 'Photos :') !!}
-		   		{!! Form::file('picture', ['id' => 'filesFormuleText']) !!}
+		   		{!! Form::label('image', 'Photos :') !!}
+		   		{!! Form::file('image', ['id' => 'filesFormuleText']) !!}
 		   		{!! $errors->first('nameEvents','<p class="help">:message</p>') !!}
        			{!! $errors->first('description','<p class="help">:message</p>') !!}
-       			{!! $errors->first('picture','<p class="help">:message</p>') !!}
+       			{!! $errors->first('image','<p class="help">:message</p>') !!}
 		   		{!! Form::submit('Proposer', ['id' => 'submit']) !!}
 		   	{!! Form::close() !!}
 	</section>
