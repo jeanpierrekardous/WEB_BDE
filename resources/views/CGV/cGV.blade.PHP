@@ -7,14 +7,18 @@
 @section('contenu')
 	<section id="cGVGroup">
 		<h1 id="cGVTittle">Conditions générales de vente</h1>
-		<p class="cGVTexte">
-			La société Cesi, 30 rue Cambronne, 75015 Paris, au Capital Social de 1,1M€, immatriculée au Registre du Commerce et des Sociétés de CESI SIRET, sous le numéro 11 75 39666 75, SIRET 802 954 785 00028 ,représentée par Laurent MAHIEU, en qualité de gérant, dûment habilité aux fins des présentes. La société peut être jointe par email en cliquant sur le formulaire de contact accessible via la page d’accueil du site. Ci-après le « Vendeur» ou la « Société ».
+		<p class="cGVTexte Center">
+			La société Cesi, 30 rue Cambronne, 75015 Paris, au Capital Social de 1,1M€<br> 
+			Immatriculée au Registre du Commerce et des Sociétés de CESI SIRET, 
+			sous le numéro 11 75 39666 75, SIRET 802 954 785 00028 <br>
+			Représentée par Laurent MAHIEU, en qualité de gérant, dûment habilité aux fins des présentes. <br>
+			La société peut être jointe par email en cliquant sur le formulaire de contact accessible via la page d’accueil du site. Ci-après le « Vendeur» ou la « Société ».
 		</p>
 
-		<p class="cGVTexte">
+		<p class="cGVTexte Center">
 			D'une part, Et la personne physique ou morale procédant à l’achat de produits ou services de la société, Ci-après, « l’Acheteur », ou « le Client » D’autre part, Il a été exposé et convenu ce qui suit : 
 		</p>
-		<article>
+		<article class="cGVSize">
 				<h2 class="blackSecondTittle">PREAMBULE</h2>
 
 				<p class="cGVTexte">
@@ -22,14 +26,14 @@
 				</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 1 : Objet et dispositions générales</h2>
 
 			<p class="cGVTexte">
 				Les présentes Conditions Générales de Vente déterminent les droits et obligations des parties dans le cadre de la vente en ligne de Produits proposés par le Vendeur. Les présentes Conditions Générales de Vente (CGV) s’appliquent à toutes les ventes de Produits, effectuées au travers des sites Internet de la Société qui sont partie intégrante du Contrat entre l’Acheteur et le Vendeur. Le Vendeur se réserve la possibilité de modifier les présentes, à tout moment par la publication d’une nouvelle version sur son site Internet. Les CGV applicables alors sont celles étant en vigueur à la date du paiement (ou du premier paiement en cas de paiements multiples) de la commande. Ces CGV sont consultables sur le site Internet de la Société à l'adresse suivante: http://www.cesi-bde.com. La société s'assure également que leur acceptation soit claire et sans réserve en mettant en place une case à cocher et un clic de validation. Le Client déclare avoir pris connaissance de l’ensemble des présentes Conditions Générales de Vente, et le cas échéant des Conditions Particulières de Vente liées à un produit ou à un service, et les accepter sans restriction ni réserve. Le Client reconnaît qu’il a bénéficié des conseils et informations nécessaires afin de s’assurer de l’adéquation de l’offre à ses besoins. Le Client déclare être en mesure de contracter légalement en vertu des lois françaises ou valablement représenter la personne physique ou morale pour laquelle il s’engage. Sauf preuve contraire les informations enregistrées par la Société constituent la preuve de l’ensemble des transactions.
 			</p>
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 2: Prix</h2>
 
 			<p class="cGVTexte">
@@ -37,7 +41,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 2.1 : Prix- exemple de clause illicite</h2>
 
 			<p class="cGVTexte">
@@ -45,15 +49,23 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 3: Conclusion du contrat en ligne</h2>
 
 			<p class="cGVTexte">
-				Le Client devra suivre une série d’étapes spécifiques à chaque Produit offert par le Vendeur pour pouvoir réaliser sa commande. Toutefois, les étapes décrites ci-après sont systématiques : ➢ Information sur les caractéristiques essentielles du Produit ; ➢ Choix du Produit, le cas échéant de ses options et indication des données essentielles du Client (identification, adresse…) ; ➢ Acceptation des présentes Conditions Générales de Vente. ➢ Vérification des éléments de la commande et, le cas échéant, correction des erreurs. ➢ Suivi des instructions pour le paiement, et paiement des produits. ➢ Livraison des produits. Le Client recevra alors confirmation par courrier électronique du paiement de la commande, ainsi qu’un accusé de réception de la commande la confirmant. Il recevra un exemplaire .pdf des présentes conditions générales de vente. Pour les produits livrés, cette livraison se fera à l’adresse indiquée par le Client. Aux fins de bonne réalisation de la commande, et conformément à l’article 1316-1 du Code civil, le Client s’engage à fournir ses éléments d’identification véridiques. Le Vendeur se réserve la possibilité de refuser la commande, par exemple pour toute demande anormale, réalisée de mauvaise foi ou pour tout motif légitime.
+				Le Client devra suivre une série d’étapes spécifiques à chaque Produit offert par le Vendeur pour pouvoir réaliser sa commande. Toutefois, les étapes décrites ci-après sont systématiques :<br> <br>
+				➢ Information sur les caractéristiques essentielles du Produit ;<br>
+				➢ Choix du Produit, le cas échéant de ses options et indication des données essentielles du Client (identification, adresse…) ; <br> 
+				➢ Acceptation des présentes Conditions Générales de Vente. <br> 
+				➢ Vérification des éléments de la commande et, le cas échéant, correction des erreurs. <br> 
+				➢ Suivi des instructions pour le paiement, et paiement des produits. <br>
+				➢ Livraison des produits. Le Client recevra alors confirmation par courrier électronique du paiement de la commande, ainsi qu’un accusé de réception de la commande la confirmant.<br> <br>
+
+				Il recevra un exemplaire .pdf des présentes conditions générales de vente. Pour les produits livrés, cette livraison se fera à l’adresse indiquée par le Client. Aux fins de bonne réalisation de la commande, et conformément à l’article 1316-1 du Code civil, le Client s’engage à fournir ses éléments d’identification véridiques. Le Vendeur se réserve la possibilité de refuser la commande, par exemple pour toute demande anormale, réalisée de mauvaise foi ou pour tout motif légitime.
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 4: Produits et services</h2>
 
 			<p class="cGVTexte">
@@ -61,7 +73,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 5: Clause de réserve de propriété</h2>
 
 			<p class="cGVTexte">
@@ -69,7 +81,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 6: Modalités de livraison</h2>
 
 			<p class="cGVTexte">
@@ -77,7 +89,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 7: Disponibilité et présentation</h2>
 
 			<p class="cGVTexte">
@@ -85,7 +97,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 8: Paiement</h2>
 
 			<p class="cGVTexte">
@@ -93,7 +105,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 9: Délai de rétraction</h2>
 
 			<p class="cGVTexte">
@@ -101,7 +113,7 @@
 			</p> 
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 10: Garanties</h2>
 
 			<p class="cGVTexte">
@@ -109,7 +121,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 11: Réclamations</h2>
 
 			<p class="cGVTexte">
@@ -117,7 +129,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 12: Droits de propriété intellectuelle</h2>
 
 			<p class="cGVTexte">
@@ -125,7 +137,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 13: Force majeure</h2>
 
 			<p class="cGVTexte">
@@ -133,7 +145,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 14: Nullité et modification du contrat</h2>
 
 			<p class="cGVTexte">
@@ -141,7 +153,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 15: Protection des données personnelles</h2>
 
 			<p class="cGVTexte">
@@ -149,7 +161,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 16: Clause limitative de responsabilité</h2>
 
 			<p class="cGVTexte">
@@ -157,7 +169,7 @@
 			</p>
 
 		</article>
-		<article>
+		<article class="cGVSize">
 			<h2 class="blackSecondTittle">Article 17: Droit applicable</h2>
 
 			<p id="lastCGVTexte">
