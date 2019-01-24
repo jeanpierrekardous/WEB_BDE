@@ -14,7 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="css/legalmention.css">
 		<link rel="stylesheet" type="text/css" href="css/events.css">
 		<link rel="stylesheet" type="text/css" href="css/idea.css">
-		<link rel="stylesheet" type="text/css" href="css/cGV.css">
+		<link rel="stylesheet" type="text/css" href="css/cgv.css">
     	@yield('title')
     </head>
     <body id="font">

@@ -47,5 +47,5 @@ Route::get('events', function(){
 });
 
 Route::get('CGV', function(){
-	return view('CGV/cGV');
+	return view('CGV/cgv');
 });
