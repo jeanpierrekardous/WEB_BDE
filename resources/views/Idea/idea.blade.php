@@ -10,7 +10,7 @@
 		<?php
 		if(empty(session('email'))){
 		?>
-			<p><a href="login">Veuillez-vous connecter !</a></p>
+			<a href="login" class="redirectLogin"><p class="connectNeed">Veuillez-vous connecter !</p></a>
         <?php
 		}
 		else{
@@ -25,7 +25,7 @@
 			<?php
 			if(empty(session('email'))){
 			?>
-				<p><a href="login">Veuillez-vous connecter !</a></p>
+				<a href="login" class="redirectLogin"><p class="connectNeed">Veuillez-vous connecter !</p></a>
             <?php
 			}
 			else{
@@ -34,9 +34,14 @@
 					@foreach ($idea as $idea)
 						@if($idea->nom != null)
 							<article class="ideaListAll">
-								<?php echo $idea->nom; ?>
-								<?php echo $idea->image; ?>
-								<img src="<?php $idea->image; ?>" alt="ImageEvènement">
+								<h2 class="titleIdeaList"><?php echo $idea->nom; ?></h2>
+								<?php echo"<img src='" . $idea->image . "' alt='pictureIdea' class='picturesIdea'>"; ?>
+								<p class="descriptionIdea"><?php echo $idea->description; ?></p>
+								<div class="barLike">
+									<a href="idea/<?php echo $idea->ID_idee_table ?>"><img src="fonts/pictures/like.png" alt="pictureLike" class="likePicture"></a>
+									<p class="vote"><?php echo $idea->vote; ?>
+									</p>
+								</div>
 							</article>
 						@endif
 					@endforeach

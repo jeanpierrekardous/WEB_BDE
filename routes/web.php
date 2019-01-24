@@ -51,3 +51,7 @@ Route::get('CGV', function(){
 
 Route::get('writeidea', 'WriteideaController@getFormIdea');
 Route::post('writeidea', 'WriteideaController@postFormIdea');
+
+Route::get('idea/{n}', function($n) {
+	return "test";
+})->where('n', '[0-9]+');
