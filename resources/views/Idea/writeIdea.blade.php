@@ -11,7 +11,7 @@
 		   		{!! Form::label('nameEvents', 'Nom de l\'événement :') !!}
 		   		{!! Form::text('nameEvents', null , array('required' => 'required', 'id' => 'subject')) !!}
 		   		{!! Form::label('description', 'description de l\'événement :') !!}
-		   		{!! Form::text('description', null , array('required' => 'required', 'id' => 'contactMessage')) !!}
+		   		{!! Form::textarea('description', null , array('required' => 'required', 'id' => 'contactMessage')) !!}
 		   		{!! Form::label('picture', 'Photos :') !!}
 		   		{!! Form::file('picture', ['id' => 'filesFormuleText']) !!}
 		   		{!! $errors->first('nameEvents','<p class="help">:message</p>') !!}
