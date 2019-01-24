@@ -15,7 +15,7 @@ class CreateArticleTable extends Migration
     {
         //We create column in the tables "Article"
         Schema::create('article', function (Blueprint $table) {
-            $table->increments('idArticle');
+            $table->increments('IDArticle');
             $table->string('nom', 50);
             $table->string('image', 50);
             $table->string('categorie', 50);

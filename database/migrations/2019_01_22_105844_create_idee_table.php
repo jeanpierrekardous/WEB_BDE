@@ -14,7 +14,7 @@ class CreateIdeeTable extends Migration
     public function up()
     {
         Schema::create('idee_table', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('ID_idee_table');
             $table->integer('IDInscription');
             $table->foreign('IDInscription')->references('id')->on('utilisateur');
             $table->string('nom', 50);

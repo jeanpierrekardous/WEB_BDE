@@ -14,7 +14,7 @@ class CreateCommentaireTable extends Migration
     public function up()
     {
         Schema::create('commentaire', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('IDCommentaire');
             $table->string('commentaire', 50);
             $table->integer('IDPhoto');
             $table->integer('IDInscription');
