@@ -7,8 +7,8 @@
 @section('contenu')
 	<section id="contactBDE">
 		    <h1 id="contactTittle">Error</h1>
-		    <article id="formContact">
-		    	<p >
+		    <article id="formContact ">
+		    	<p class="Center">
 		    		Erreur lors de la création d'une idée pour la boite à idée veuiller réessayer ultérieurement.
 		    	</p>
 		    </article>
