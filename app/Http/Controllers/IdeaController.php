@@ -10,7 +10,7 @@ class IdeaController extends Controller
 {
     public function getIdea(IdeaGestion $gestion){
 
-    	//$bool = $gestion->listEvents();
+    	//$idea = $gestion->listEvents();
 
     	return view('Idea/idea');
     }

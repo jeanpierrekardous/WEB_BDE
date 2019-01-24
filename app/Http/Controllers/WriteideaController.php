@@ -21,7 +21,7 @@ class WriteideaController extends Controller
     		return redirect('/');
     	}
     	else{
-
+    		return view('wrongWriteIdea');
     	}
     }    
 }
