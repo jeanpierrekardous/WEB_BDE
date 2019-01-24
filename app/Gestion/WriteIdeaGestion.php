@@ -26,9 +26,7 @@ class WriteIdeaGestion
 
 		$insertinto = DB::connection('mysql3')->statement('CALL writeIdea(?,?,?,?)', [$name, $description, $roadFull, $vote]);
 		
-		return true;
-		
+		return true;	
 	}
-
 }
 ?>
