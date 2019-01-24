@@ -15,10 +15,9 @@ class CreatePhotosTable extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->increments('IDPhotos');
-            $table->integer('IDInscription');
             $table->integer('IDEvent');
             $table->foreign('IDEvent')->references('id')->on('evenement_officiel');
-            $table->foreign('IDInscription')->references('id')->on('utilisateur');
+       
             $table->integer('likes');
             $table->timestamps();
         });
