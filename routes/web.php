@@ -46,6 +46,7 @@ Route::post('contact', 'ContactController@postContact');
 Route::get('idea', 'IdeaController@getIdea');
 
 Route::get('events', 'EventsController@getEventPage');
+Route::get('signup/events/{n}', 'EventsController@getSignup')->where('n', '[0-9]+');
 
 Route::get('CGV', function(){
 	return view('CGV/cgv');
@@ -71,5 +72,3 @@ Route::get('writeidea', 'WriteideaController@getFormIdea');
 Route::post('writeidea', 'WriteideaController@postFormIdea');
 
 Route::get('idea/{n}', 'IdeaController@getLike')->where('n', '[0-9]+');
-
-Route::get('signup/events/{n}', 'EventsController@getSignup')->where('n', '[0-9]+');
