@@ -41,9 +41,7 @@ Route::post('contact', 'ContactController@postContact');
 
 Route::get('idea', 'IdeaController@getIdea');
 
-Route::get('events', function(){
-	return view('Events/events');
-});
+Route::get('events', 'EventsController@getEventPage');
 
 Route::get('CGV', function(){
 	return view('CGV/cgv');
