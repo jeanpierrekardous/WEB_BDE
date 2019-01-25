@@ -19,8 +19,8 @@ class IdeaGestion
 
 		if (count($verif) == 0) {
 			
-			DB::connection('mysql3')->select('CALL addLike(?)',[$n]);
-			DB::connection('mysql3')->select('CALL addTableVoter(?,?)',[session('iduser'), $n]);
+			DB::connection('mysql3')->statement('CALL addLike(?)',[$n]);
+			DB::connection('mysql3')->statement('CALL addTableVoter(?,?)',[session('iduser'), $n]);
 
 			return true;
 

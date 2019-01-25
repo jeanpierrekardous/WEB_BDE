@@ -9,8 +9,19 @@ class EventsController extends Controller
 {
     public function getEventPage(EventsGestion $gestion){
 
-    	$resultEvents = $gestion->printEvents();
+    	$resultEvent = $gestion->printEvents();
+
+    	$resultEvents = $resultEvent['1'];
+    	$resultSignupEvent = $resultEvent['2'];
     	
-    	return view('Events/events')->withResultEvents($resultEvents);
+    	return view('Events/events')->withResultEvents($resultEvents)->withResultSignupEvent($resultSignupEvent);
+    }
+
+    public function getSignup($n, EventsGestion $gestion){
+
+    	$gestion->addSignupEvent($n);
+
+    	return redirect('events');
+
     }
 }

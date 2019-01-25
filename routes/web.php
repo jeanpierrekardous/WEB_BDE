@@ -22,6 +22,10 @@ Route::post('signup', 'SignupController@postForm');
 
 Route::get('logout', function(){
 	session()->forget('email');
+	session()->forget('name');
+	session()->forget('role');
+	session()->forget('local');
+	session()->forget('iduser');
 	session()->flush();
 	return redirect('/');
 });
@@ -67,3 +71,5 @@ Route::get('writeidea', 'WriteideaController@getFormIdea');
 Route::post('writeidea', 'WriteideaController@postFormIdea');
 
 Route::get('idea/{n}', 'IdeaController@getLike')->where('n', '[0-9]+');
+
+Route::get('signup/events/{n}', 'EventsController@getSignup')->where('n', '[0-9]+');
