@@ -16,6 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="css/idea.css">
 		<link rel="stylesheet" type="text/css" href="css/cgv.css">
 		<link rel="stylesheet" type="text/css" href="css/cgu.css">
+		<link rel="stylesheet" type="text/css" href="css/ppd.css">
     	@yield('title')
     </head>
     <body id="font">
