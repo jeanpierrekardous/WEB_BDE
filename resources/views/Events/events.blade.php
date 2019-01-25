@@ -16,7 +16,25 @@
 		}
 		else{
 		?>
-
+			@foreach($resultEvents as $resultEvents)
+				@if($resultEvents->nom != null)
+					<article class="ideaListAll">
+						<h2><?php echo $resultEvents->nom; ?></h2>
+						<p>
+							<?php echo $resultEvents->description; ?>
+						</p>
+						<p>
+							<?php echo $resultEvents->date; ?>
+						</p>
+						<p>
+							<?php echo $resultEvents->type; ?>
+						</p>
+						<p>
+							<?php echo $resultEvents->frequence; ?>
+						</p>
+					</article>
+				@endif
+			@endforeach
 		<?php
 		}
 		?>
