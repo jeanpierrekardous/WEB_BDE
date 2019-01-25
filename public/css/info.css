@@ -39,3 +39,13 @@
 	text-align: left;
 }
 
+.infoSize{
+	color: #000000;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	margin: auto;	
+}
