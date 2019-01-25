@@ -27,7 +27,6 @@
 				<li>Rawan Abdelsalam - Responsable événement</li>
 				<li>Benjamin Mollon - Responsable communication</li>
 			</ul>
-			
 		<h2 class="secondTittle">Où nous trouver ? </h2>
 		<p class="infoTexte"><i class="fas fa-map-marked"></i>19 Avenue Guy de Collongue 69130 Écully.</p>
 		<!-- api map -->
