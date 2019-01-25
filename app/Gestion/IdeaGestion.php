@@ -12,5 +12,23 @@ class IdeaGestion
 
 		return $events;
 	}
+
+	public function addLike($n){
+
+		$verif = DB::connection('mysql3')->select('CALL readLike(?,?)',[session('iduser'), $n]);
+
+		if (count($verif) == 0) {
+			
+			DB::connection('mysql3')->select('CALL addLike(?)',[$n]);
+			DB::connection('mysql3')->select('CALL addTableVoter(?,?)',[session('iduser'), $n]);
+
+			return true;
+
+		}
+		else{
+
+			return false;
+		}
+	}
 }
 ?>

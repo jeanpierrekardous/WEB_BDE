@@ -60,6 +60,4 @@ Route::get('PPD', function(){
 Route::get('writeidea', 'WriteideaController@getFormIdea');
 Route::post('writeidea', 'WriteideaController@postFormIdea');
 
-Route::get('idea/{n}', function($n) {
-	return "test";
-})->where('n', '[0-9]+');
+Route::get('idea/{n}', 'IdeaController@getLike')->where('n', '[0-9]+');

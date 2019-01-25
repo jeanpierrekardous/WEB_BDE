@@ -14,4 +14,11 @@ class IdeaController extends Controller
 
     	return view('Idea/idea')->withIdea($idea);
     }
+
+    public function getLike($n, IdeaGestion $gestion){
+
+    	$likes = $gestion->addLike($n);
+
+    	return redirect('idea');
+    }
 }
