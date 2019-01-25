@@ -7,6 +7,7 @@
 @section('contenu')
 	<section id="infoGroup">
 		<h1 id="infoTittle">Bureau des élèves</h1>
+		<!-- Here, there are information about us, which activities and where we are situated -->
 		<article class="infoSize">
 			<h2 class="secondTittle">Qui sommes-nous ?</h2>
 			<p class="infoTexte">Le BDE est un groupe de plusieurs étudiants de la première à la dernière année qui se rassemble régulièrement afin de proposer à ces derniers diverses activités. Ces derniers peuvent être proposés par les élèves dans la boîte à idées qui seront par la suite votées. <br />Une fois votée, c'est au BDE de mettre en place l'événement.</p>
