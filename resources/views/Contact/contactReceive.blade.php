@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<section id="contactBDE">
+			<!-- This is the message which it will be send -->
 			<h1 id="contactTittle">Nous contacter</h1>
 			<p>
 				une demande de contacte a été effectué !<br>

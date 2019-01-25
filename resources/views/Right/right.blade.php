@@ -4,6 +4,7 @@
     <title>Rights</title>
 @endsection
 @section('contenu')
+<!-- Here, we create the Legal Notice -->
     <section id="rightsGroup">
         <h1 id="rightsTittles">Mentions légales</h1>
         <article class="rightsArticles">

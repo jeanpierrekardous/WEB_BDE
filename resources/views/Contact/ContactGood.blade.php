@@ -6,7 +6,7 @@
 
 @section('contenu')
 	<section id="contactBDE">
-		<!-- Tittle -->
+		<!-- This is the answer if the mail has been sent -->
 		<h1 id="contactTittle">Reponse</h1>
 		<p id="contactTexte">
 			Votre message a bien été réceptionné.<br>

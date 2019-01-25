@@ -21,7 +21,7 @@
 		?>
 		<article id="ideaBox">
 			<h1 id="ideaSecondTittle">Liste des idées proposées</h1>
-			<!-- ajouter la liste des évenements -->
+			<!-- Add events lists -->
 			<?php
 			if(empty(session('email'))){
 			?>

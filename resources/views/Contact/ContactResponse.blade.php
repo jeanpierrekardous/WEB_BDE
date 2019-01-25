@@ -6,7 +6,7 @@
 </head>
 <body>
 	<p>
-		Votre message est arrive à destination.<br>
+		Votre message est arrivé à destination.<br>
 		Bonne journée.
 	</p>
 

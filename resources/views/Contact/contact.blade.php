@@ -6,7 +6,7 @@
 
 @section('contenu')
 	<section id="contactBDE">
-		<!-- Tittle -->
+		<!-- Title -->
 		<h1 id="contactTittle">Nous contacter</h1>
 		<!-- Open the form and add an id to the CSS file. -->
 		{!! Form::open(['url' => 'contact', 'id' => 'formContact']) !!} 

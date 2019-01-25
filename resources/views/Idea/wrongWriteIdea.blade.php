@@ -5,6 +5,7 @@
 @endsection
 
 @section('contenu')
+<!-- Return this view if there is a problem during sending data -->
 	<section id="contactBDE">
 		    <h1 id="contactTittle">Error</h1>
 		    <article id="formContact">
