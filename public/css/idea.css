@@ -83,12 +83,13 @@
 .descriptionIdea{
 	border: 2px dashed #000000;
 	padding: 10px;
-	width: 100%;
+	width: 300px;
 	border-radius: 10px;
 	height: 150px;
 	margin-bottom: 0;
 	overflow: scroll;
 	overflow-x: hidden;
+	overflow-wrap: break-word;
 }
 .likePicture{
 	width: 50px;
