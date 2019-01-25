@@ -102,6 +102,12 @@
 		    <a href="right" id="legalMention"><p class="information_legal">
 		        Mentions légales
 		    </p></a>
+		     <p class="delimitor">
+		        &nbsp;
+		    </p>
+		    <a href="PPD" id="legalMention"><p class="information_legal">
+		        Politique de protection des données
+		    </p></a>
 		</footer>
     </body>
 </html>

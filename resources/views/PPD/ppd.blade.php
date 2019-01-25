@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('title')
-	<title>Conditions générales d'utilisations</title>
+	<title>Politique de protection des donnée Personnelle</title>
 @endsection
 
 @section('contenu')

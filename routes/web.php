@@ -53,6 +53,10 @@ Route::get('CGU', function(){
 	return view('CGU/cgu');
 });
 
+Route::get('PPD', function(){
+	return view('PPD/ppd');
+});
+
 Route::get('writeidea', 'WriteideaController@getFormIdea');
 Route::post('writeidea', 'WriteideaController@postFormIdea');
 
