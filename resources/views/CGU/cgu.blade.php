@@ -8,7 +8,7 @@
 	<section id="cguGroup">
 		<article class="cguSize">
 
-		<h1 id="cguTittle">Conditions générales d'utilisation du site www.cesi-bde.com</h1>
+		<h1 id="cguTittle">Conditions générales d'utilisation du site www.cesi&#8209;bde.com</h1>
 
 		<h2 class="blackSecondTittle">Article 1: Objet</h2>
 		<p class="cguTexte">
