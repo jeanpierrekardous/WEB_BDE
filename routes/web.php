@@ -55,6 +55,10 @@ Route::get('PPD', function(){
 	return view('PPD/ppd');
 });
 
+Route::get('admin', function(){
+	return view('Admin/admin');
+});
+
 Route::get('writeidea', 'WriteideaController@getFormIdea');
 Route::post('writeidea', 'WriteideaController@postFormIdea');
 
