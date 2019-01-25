@@ -34,6 +34,11 @@
 		            <?php
 					}
 					else{
+						if (session('role')=='admin') {
+						?>
+							<li><a href="admin">Admin</a></li>
+						<?php
+						}
 					?>
 						<li id="welcome">Bonjour <?php echo session('name'); ?> !</li>
 						<li><a href="logout">Déconnexion</a></li>
