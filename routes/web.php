@@ -49,6 +49,10 @@ Route::get('CGV', function(){
 	return view('CGV/cgv');
 });
 
+Route::get('CGU', function(){
+	return view('CGU/cgu');
+});
+
 Route::get('writeidea', 'WriteideaController@getFormIdea');
 Route::post('writeidea', 'WriteideaController@postFormIdea');
 

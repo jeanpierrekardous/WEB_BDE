@@ -15,6 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="css/events.css">
 		<link rel="stylesheet" type="text/css" href="css/idea.css">
 		<link rel="stylesheet" type="text/css" href="css/cgv.css">
+		<link rel="stylesheet" type="text/css" href="css/cgu.css">
     	@yield('title')
     </head>
     <body id="font">
@@ -82,6 +83,12 @@
 		    <a href="CGV" id="legalMention"><p class="information_legal">
 		       Condition générale de vente
 		    </p></a> 
+		    <p class="delimitor">
+		        &nbsp;
+		    </p>
+		     <a href="CGU" id="legalMention"><p class="information_legal">
+		        Conditions générales d'utilisation
+		    </p></a>
 		    <p class="delimitor">
 		        &nbsp;
 		    </p>
