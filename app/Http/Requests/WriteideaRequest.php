@@ -25,7 +25,7 @@ class WriteideaRequest extends FormRequest
     {
         return [
             'nameEvents' => 'required|max:30|alpha_num',
-            'description' => 'required|max:10000',
+            'description' => 'required|max:254',
             'image' => 'required|image'
         ];
     }

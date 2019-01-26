@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Gestion\EventsGestion;
 use App\Http\Requests\CommentaryRequest;
+use App\Http\Requests\PictureRequest;
 
 class EventsController extends Controller
 {
@@ -34,6 +35,15 @@ class EventsController extends Controller
         $resultAgree = $resultPictures['2'];
 
         return view('Events/eventPicture')->withResultPicture($resultPicture)->withResultAgree($resultAgree);
+    }
+
+    public function postPicture($n, EventsGestion $gestion, PictureRequest $request){
+
+        $URL = $_SERVER['HTTP_REFERER'];
+        $gestion->addPictureEvent($n, $request);
+
+        return redirect($URL);
+
     }
 
     public function getLikePictureEvent($n, EventsGestion $gestion){

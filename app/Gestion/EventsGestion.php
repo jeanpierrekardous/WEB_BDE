@@ -36,6 +36,29 @@ class EventsGestion
 		return $arrayTem;
 	}
 
+	public function addPictureEvent($n, $request){
+
+		echo $request['images'];
+
+		$chemin = config('image.pathEvents');
+		$img = $request->file('images');
+		$extension = $img->getClientOriginalExtension();
+
+		do{
+			$nom = str_random(10) . '.' . $extension;
+
+
+		} while (file_exists($chemin . '/' . $nom));
+
+		$img->move($chemin, $nom);
+		$roadFull = $chemin.'/'.$nom;
+		$vote = 0;
+
+		DB::connection('mysql3')->statement('CALL addPictureEvent(?,?,?)', [$n, $roadFull, $vote]);
+
+		return true;
+	}
+
 	public function addLikeEvent($n){
 
 		$resultLikeEvent = DB::connection('mysql3')->select('CALL verifLikeEvent(?,?)',[session('iduser'), $n]);

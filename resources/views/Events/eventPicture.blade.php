@@ -18,13 +18,13 @@
 		if ($info == 1) {
 		?>
 			<h1 id="addpicture">Ajouter une photo</h1>
-			<form method="post" id="formPictureEventPost" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
-				@csrf
+			
+			{!! Form::open(['url' => $_SERVER["REQUEST_URI"], 'files' => true, 'id' => 'formContact']) !!} 
 				{!! Form::label('images', 'Photos :') !!}
 		   		{!! Form::file('images', ['id' => 'filesFormule']) !!}
 		   		{!! $errors->first('images','<p class="help">:message</p>') !!}
 				{!! Form::submit('Envoyer !', ['id' => 'publishedButton']) !!}
-			</form>
+			{!! Form::close() !!}
 		<?php
 		}
 		?>
@@ -38,8 +38,9 @@
 		else{
 		?>
 			<h1 id="eventTittle">Voici les photos poster par les participants de cet événement</h1>
+			<div id="flexPictureOneEvent">
 			@foreach($resultPicture as $pictures)
-				<article class="eventListAll">
+				<article class="eventListAllPicture">
 					<?php echo"<img src='../" . $pictures->link . "' alt='pictureEvent' class='picturesEvent'>"; ?>
 					<div class="barLikePicturesEvent">
 						<a href="comment/<?php echo $pictures->IDPhotos; ?>" class="linkComment">
@@ -53,6 +54,7 @@
 					</div>
 				</article>
 			@endforeach
+			</div>
 		<?php
 		}
 		?>

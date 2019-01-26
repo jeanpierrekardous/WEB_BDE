@@ -49,6 +49,7 @@ Route::get('events', 'EventsController@getEventPage');
 Route::get('signup/events/{n}', 'EventsController@getSignup')->where('n', '[0-9]+');
 
 Route::get('events/{n}', 'EventsController@getPicture')->where('n', '[0-9]+');
+Route::post('events/{n}', 'EventsController@postPicture')->where('n', '[0-9]+');
 
 Route::get('events/like/{n}', 'EventsController@getLikePictureEvent')->where('n', '[0-9]+');
 
