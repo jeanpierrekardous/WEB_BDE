@@ -30,7 +30,10 @@ class EventsController extends Controller
 
         $resultPictures = $gestion->getPictureEvent($n);
 
-        return view('Events/eventPicture')->withResultPictures($resultPictures);
+        $resultPicture = $resultPictures['1'];
+        $resultAgree = $resultPictures['2'];
+
+        return view('Events/eventPicture')->withResultPicture($resultPicture)->withResultAgree($resultAgree);
     }
 
     public function getLikePictureEvent($n, EventsGestion $gestion){

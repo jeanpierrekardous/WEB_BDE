@@ -14,7 +14,7 @@ class CommentaryRequest extends FormRequest
     public function rules()
     {
         return [
-            'bodies' => 'required|max:10000',
+            'bodies' => 'required|max:254',
         ];
     }
 }

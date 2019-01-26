@@ -29,7 +29,11 @@ class EventsGestion
 
 		$resultSignupEvent = DB::connection('mysql3')->select('CALL getPictures(?)',[$n]);
 
-		return $resultSignupEvent;
+		$resultAgreeToPost = DB::connection('mysql3')->select('CALL veriAgreeToPostPicture(?)',[$n]);
+
+		$arrayTem = array('1' => $resultSignupEvent, $resultAgreeToPost);
+
+		return $arrayTem;
 	}
 
 	public function addLikeEvent($n){

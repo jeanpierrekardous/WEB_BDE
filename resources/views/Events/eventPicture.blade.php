@@ -7,7 +7,29 @@
 @section('contenu')
 	<section id="eventGroup">
 		<?php
-		$countPictures = count($resultPictures);
+		$info = 0;
+		?>
+		@foreach($resultAgree as $agree)
+			@if($agree->IDInscription == session('iduser'))
+				<?php $info = 1; ?>
+			@endif
+		@endforeach
+		<?php
+		if ($info == 1) {
+		?>
+			<h1 id="addpicture">Ajouter une photo</h1>
+			<form method="post" id="formPictureEventPost" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+				@csrf
+				{!! Form::label('images', 'Photos :') !!}
+		   		{!! Form::file('images', ['id' => 'filesFormule']) !!}
+		   		{!! $errors->first('images','<p class="help">:message</p>') !!}
+				{!! Form::submit('Envoyer !', ['id' => 'publishedButton']) !!}
+			</form>
+		<?php
+		}
+		?>
+		<?php
+		$countPictures = count($resultPicture);
 		if ($countPictures == 0) {
 		?>
 			<h1 id="eventTittle">Il n'y a pas encore de photo</h1>
@@ -16,7 +38,7 @@
 		else{
 		?>
 			<h1 id="eventTittle">Voici les photos poster par les participants de cet événement</h1>
-			@foreach($resultPictures as $pictures)
+			@foreach($resultPicture as $pictures)
 				<article class="eventListAll">
 					<?php echo"<img src='../" . $pictures->link . "' alt='pictureEvent' class='picturesEvent'>"; ?>
 					<div class="barLikePicturesEvent">

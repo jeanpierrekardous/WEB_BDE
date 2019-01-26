@@ -15,6 +15,7 @@
 			{!! Form::label('bodies', 'Commentaire :') !!}
         	<!-- Square link with label 'bodies' if we write a commentary on this we add it to the database -->
         	{!! Form::textarea('bodies', null , array('required' => 'required', 'id' => 'contactMessage')) !!}
+        	{!! $errors->first('bodies','<p class="help">:message</p>') !!}
 			{!! Form::submit('Envoyer !', ['id' => 'publishedButton']) !!}
 		</form>
 		<h2 class="commentTittle">Voici la liste des commentaires</h2>
