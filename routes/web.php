@@ -47,9 +47,9 @@ Route::get('idea', 'IdeaController@getIdea');
 
 Route::get('events', 'EventsController@getEventPage');
 Route::get('signup/events/{n}', 'EventsController@getSignup')->where('n', '[0-9]+');
-Route::get('patate', fonction($n){ 
+Route::get('patate/{n}', function($n){
 	return view('Events/eventPicture');
-})->where('n', '[0-9]+');
+});
 
 Route::get('CGV', function(){
 	return view('CGV/cgv');

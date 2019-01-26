@@ -20,7 +20,7 @@
 				@foreach($resultEvents as $resultEvents)
 					@if($resultEvents->nom != null)
 						<article class="eventListAll">
-							<a href="events/<?php echo $resultEvents->ID_evenement_officiel; ?>" class="linkEvents">
+							<a href="event/<?php echo $resultEvents->ID_evenement_officiel; ?>" class="linkEvents">
 							<h2 class="titleEvents"><?php echo $resultEvents->nom; ?></h2>
 							<?php echo"<img src='" . $resultEvents->basePhoto . "' alt='pictureEvent' class='picturesEvent'>"; ?>
 							<p class="descriptionEvent">
