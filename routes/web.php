@@ -48,9 +48,12 @@ Route::get('idea', 'IdeaController@getIdea');
 Route::get('events', 'EventsController@getEventPage');
 Route::get('signup/events/{n}', 'EventsController@getSignup')->where('n', '[0-9]+');
 
-Route::get('patate/{n}', function($n){
-	return view('Events/eventPicture');
-});
+Route::get('events/{n}', 'EventsController@getPicture')->where('n', '[0-9]+');
+
+Route::get('events/like/{n}', 'EventsController@getLikePictureEvent')->where('n', '[0-9]+');
+
+Route::get('events/comment/{n}', 'EventsController@getComment')->where('n', '[0-9]+');
+Route::post('events/comment/{n}', 'EventsController@postComment')->where('n', '[0-9]+');
 
 Route::get('CGV', function(){
 	return view('CGV/cgv');

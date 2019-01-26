@@ -3,27 +3,27 @@
     <head>
     	<meta charset="utf-8">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="{{url('favicon.ico')}}" />
 		<!-- Link to all .css -->
-		<link rel="stylesheet" type="text/css" href="../css/home.css">
-		<link rel="stylesheet" type="text/css" href="../css/general.css">
-		<link rel="stylesheet" type="text/css" href="../css/contact.css">
-		<link rel="stylesheet" type="text/css" href="../css/signup.css">
-		<link rel="stylesheet" type="text/css" href="../css/info.css">
-		<link rel="stylesheet" type="text/css" href="../css/help.css">
-		<link rel="stylesheet" type="text/css" href="../css/legalmention.css">
-		<link rel="stylesheet" type="text/css" href="../css/events.css">
-		<link rel="stylesheet" type="text/css" href="../css/idea.css">
-		<link rel="stylesheet" type="text/css" href="../css/cgv.css">
-		<link rel="stylesheet" type="text/css" href="../css/cgu.css">
-		<link rel="stylesheet" type="text/css" href="../css/ppd.css">
-		<link rel="stylesheet" type="text/css" href="../css/shop.css">
+		<link rel="stylesheet" type="text/css" href="{{url('css/home.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/general.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/contact.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/signup.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/info.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/help.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/legalmention.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/events.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/idea.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/cgv.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/cgu.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/ppd.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/shop.css')}}">
     	@yield('title')
     </head>
     <body id="font">
     	<!-- Header with picture, title, sub-title and the menu (login, sign up and help) -->
 		<header id="headerHome">
-		    <a href="/"><img src="../fonts/pictures/LogoBDE.png" alt="logoBDE" id="logo"></a>
+		    <a href="{{url('/')}}"><img src="{{url('fonts/pictures/LogoBDE.png')}}" alt="logoBDE" id="logo"></a>
 		    <nav id="menu">
 		        <ul id="flexboxmenu">
 		            <!-- Menu(login...) -->
@@ -72,13 +72,13 @@
 			        <p class="second">Retrouvez-nous&nbsp;sur&nbsp;:</p>
 			        <div id="image">
 			            <a href="https://www.facebook.com/BDECesiLyon/" target="_Blank">
-			                <img src="../fonts/pictures/logo_facebook.PNG" alt="logo_facebook">
+			                <img src="{{url('fonts/pictures/logo_facebook.PNG')}}" alt="logo_facebook">
 			            </a>
 			            <a href="https://www.youtube.com/channel/UCWanyqUivV6rjbTABGFI8pA" target="_Blank">
-			                <img src="../fonts/pictures/logo_yt.PNG" alt="logo_yt">
+			                <img src="{{url('fonts/pictures/logo_yt.PNG')}}" alt="logo_yt">
 			            </a>
 			            <a href="https://www.instagram.com/campus_cesi/?hl=fr" target="_Blank">
-			                <img src="../fonts/pictures/logo_insta.PNG" alt="logo_insta">
+			                <img src="{{url('fonts/pictures/logo_insta.PNG')}}" alt="logo_insta">
 			            </a>
 			        </div>
 			    </div>
