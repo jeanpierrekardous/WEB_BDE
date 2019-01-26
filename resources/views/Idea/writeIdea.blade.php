@@ -6,6 +6,16 @@
 
 @section('contenu')
 	<section id="contactBDE">
+		<?php
+		if(empty(session('email'))){
+		?>
+			<h1 id="connectNeedTittle">Boîtes à idées</h1>
+			<a href="{{url('login')}}" class="redirectLogin"><p class="connectNeed">
+			Veuillez-vous connecter !</p></a>
+		<?php
+		}
+		else{
+		?>
 			<!-- Here, we create a form with name, photo, descritpion etc... -->
 		    <h1 id="contactTittle">Quel est l'événement que vous souhaitez créer ?</h1>
 		    <!-- Opening the form with a label -->
@@ -23,5 +33,8 @@
        		<!-- Here, we create the submit button, to send the form -->
 		   		{!! Form::submit('Proposer', ['id' => 'submit']) !!}
 		   	{!! Form::close() !!}
+		<?php
+		}
+		?>
 	</section>
 @endsection
