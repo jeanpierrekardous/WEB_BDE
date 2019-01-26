@@ -47,6 +47,7 @@ Route::get('idea', 'IdeaController@getIdea');
 
 Route::get('events', 'EventsController@getEventPage');
 Route::get('signup/events/{n}', 'EventsController@getSignup')->where('n', '[0-9]+');
+
 Route::get('patate/{n}', function($n){
 	return view('Events/eventPicture');
 });
