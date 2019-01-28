@@ -13,5 +13,12 @@ class AdminGestion
 		return $allAccount;
 
 	}
+
+	public function deleteUser($request){
+		
+		DB::connection('mysql2')->select('CALL deleteUser(?)',[$request->id]);
+
+		return true;
+	}
 }
 ?>

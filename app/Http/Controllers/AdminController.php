@@ -7,7 +7,11 @@ use App\Gestion\AdminGestion;
 
 class AdminController extends Controller
 {
-    public function manageAccount(AdminGestion $gestion){
+    public function manageAccount(AdminGestion $gestion, Request $request){
+
+    	if ($request->id != null) {
+    		$gestion->deleteUser($request);
+    	}
 
     	$allAccount = $gestion->manageAcc();
 

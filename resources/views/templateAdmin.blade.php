@@ -117,5 +117,6 @@
 		</footer>
 		<script type="text/javascript" src="{{url('js/jquery-3.3.1.min.js')}}"></script>
 		<script type="text/javascript" src="{{url('js/menu.js')}}"></script>
+		<script type="text/javascript" src="{{url('js/tab.js')}}"></script>
     </body>
 </html>

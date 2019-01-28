@@ -26,7 +26,7 @@
 					<td class="cellule"><?php echo $account->localisation ?></td>
 					<td class="cellule"><?php echo $account->mdp ?></td>
 					<td class="cellule"><?php echo $account->role ?></td>
-					<td class="deleteUser">Supprimer</td>
+					<td class="deleteUser <?php echo $account->id ?>">Supprimer</td>
 				</tr>
 			@endforeach
 		</table>
