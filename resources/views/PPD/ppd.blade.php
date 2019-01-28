@@ -7,7 +7,7 @@
 @section('contenu')
 	<section id="ppdGroup">
 		<article class="ppdSize">
-			<h1 id="ppdTittle">Politique de protection des données personnelles à partir du 25 mai 2018</h1>
+			<h2 id="ppdTittle">Politique de protection des données personnelles à partir du 25 mai 2018</h2>
 
 			<p class="ppdTexte">
 				Notre Politique de protection des données personnelles décrit la manière dont CESI traite les données à caractère personnel des visiteurs et des utilisateurs (ci-après les « Utilisateurs ») lors de leur navigation sur nos sites (ci-après le « Site ») :
@@ -255,5 +255,6 @@
 			<p id="lastPPDTexte">
 				CESI est engagé dans une démarche continue de conformité avec le Règlement général sur la protection des données du 27 avril 2016. Avec ce nouveau règlement CESI renforce sa politique de protection de données personnelles afin que les données de nos utilisateurs soient collectées et utilisées de manière transparente, confidentielle et sécurisée.
 			</p>
+		</article>
 	</section>
 @endsection
