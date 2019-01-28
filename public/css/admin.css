@@ -1,0 +1,78 @@
+#bodyAdminHome{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#adminHomeTitle{
+	background-color: rgb(255, 194, 82);
+	width: 80%;
+	padding: 20px;
+	color: #000000;
+	text-align: center;
+}
+.cellule{
+	border: 2px solid #000000;
+	color: #000000;
+	padding: 10px;
+}
+#titleAccount{
+	background-color: rgb(255, 194, 82);
+	width: 80%;
+	padding: 20px;
+	color: #000000;
+	text-align: center;
+}
+.titleCellule{
+	font-weight: bold;
+	background-color: green;
+}
+#titleAddUser{
+	background-color: rgb(255, 194, 82);
+	width: 80%;
+	padding: 20px;
+	color: #000000;
+	text-align: center;
+}
+.deleteUser{
+	color: #000000;
+	border: 2px solid red;
+	border-radius: 10px;
+	padding: 10px;
+}
+.deleteUser:hover{
+	background-color: red;
+	cursor: pointer;
+}
+#signupFormAdmin{
+	width: 50%;
+	border: 2px solid #5B88D9;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	color: #000000;
+}
+#submitSignupAdmin{
+	background-color: #5B88D9;
+	padding: 20px;
+	width: 30%;
+	border-radius: 10px;
+	border: 2px solid #5B88D9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0 10px 0;
+}
+#submitSignupAdmin:hover{
+	cursor: pointer;
+	background-color: #5B88FF;
+}
+#signupFormAdmin label{
+	margin: 10px 0 10px 0;
+}
