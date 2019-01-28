@@ -60,6 +60,15 @@
 								</p>
 							</div>
 						</div>
+						<?php
+							if ((session('role') == 'cesi') OR (session('role') == 'admin')) {
+							?>
+								<div class="downloadPicture">
+									<a href="{{url($pictures->link)}}" class="linkDLP" download="Picture"><p class="pLinkDLP">Télécharger</p></a>
+								</div>
+							<?php
+							}
+						?>
 					</article>
 				@endforeach
 				</div>
