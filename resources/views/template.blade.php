@@ -19,12 +19,14 @@
 		<link rel="stylesheet" type="text/css" href="{{url('css/cgu.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/ppd.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/shop.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url('css/admin.css')}}">
     	@yield('title')
     </head>
     <body id="font">
     	<!-- Header with picture, title, sub-title and the menu (login, sign up and help) -->
 		<header id="headerHome">
 		    <a href="{{url('/')}}"><img src="{{url('fonts/pictures/LogoBDE.png')}}" alt="logoBDE" id="logo"></a>
+
 		    <nav id="menu">
 		        <ul id="flexboxmenu">
 		            <!-- Menu(login...) -->
@@ -48,6 +50,29 @@
 					}
 					?>
 		            <li><a href="{{url('help')}}">Aide <i class="fas fa-question-circle"></i></a></li>
+		        </ul>
+		        <ul id="hamburgermenu">
+		        	< <!-- Menu(login...) -->
+		            <?php
+					if(empty(session('email'))){
+					?>
+						<li><a href="{{url('login')}}">Connexion</a></li>
+		            	<li><a href="{{url('signup')}}">Inscription</a></li>
+		            <?php
+					}
+					else{
+						if (session('role')=='admin') {
+						?>
+							<li><a href="{{url('admin')}}">Admin</a></li>
+						<?php
+						}
+					?>
+						<li id="welcome">Bonjour <?php echo session('name'); ?> !</li>
+						<li><a href="{{url('logout')}}">Déconnexion</a></li>
+					<?php
+					}
+					?>
+		            <li><a href="{{url('help')}}">Aide <i class="fas fa-question-circle"></i></a></li>>
 		        </ul>
 		    </nav>
 		    <!-- title and sub-title -->
