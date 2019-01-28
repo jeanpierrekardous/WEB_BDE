@@ -148,7 +148,7 @@
 	color: #000000;
 	cursor: pointer;
 }
-#legalMention{
+.legalMention{
 	text-decoration: none;
 	color: #ffffff;
 }
