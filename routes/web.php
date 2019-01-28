@@ -81,3 +81,5 @@ Route::post('writeidea', 'WriteideaController@postFormIdea');
 
 Route::get('idea/{n}', 'IdeaController@getLike')->where('n', '[0-9]+');
 Route::get('idea/delete/{n}', 'IdeaController@getDelete')->where('n', '[0-9]+');
+
+Route::get('idea/add/event/{n}', 'IdeaController@getEventByIdea')->where('n', '[0-9]+');

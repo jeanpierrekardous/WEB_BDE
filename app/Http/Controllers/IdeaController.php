@@ -29,4 +29,10 @@ class IdeaController extends Controller
     	return redirect('idea');
 
     }
+
+    public function getEventByIdea($n){
+
+    	return view("Idea/addIdeaToEvent");
+
+    }
 }
