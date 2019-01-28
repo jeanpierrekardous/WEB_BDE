@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Gestion\IdeaGestion;
+use App\Http\Requests\AddeventRequest;
 
 
 class IdeaController extends Controller
@@ -33,6 +34,14 @@ class IdeaController extends Controller
     public function getEventByIdea($n){
 
     	return view("Idea/addIdeaToEvent");
+
+    }
+
+    public function postEventByIdea($n, IdeaGestion $gestion, AddeventRequest $request){
+
+    	$gestion->postEventByIdea($n, $request);
+
+    	return redirect('events');
 
     }
 }

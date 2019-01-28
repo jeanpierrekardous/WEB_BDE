@@ -37,5 +37,16 @@ class IdeaGestion
 
 		return true;
 	}
+
+	public function postEventByIdea($n, $request){
+
+		$idea = DB::connection('mysql3')->select('CALL getIdea(?)',[$n]);
+
+		print_r($idea);
+		DB::connection('mysql3')->statement('CALL addEvent(?,?,?,?,?,?)',[$idea[0]->nom, $idea[0]->description, $request['date'], $request['type'], "Une seul fois", $idea[0]->image]);
+
+		return true;
+
+	}
 }
 ?>
