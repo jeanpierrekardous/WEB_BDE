@@ -7,7 +7,7 @@
 @section('contenu')
 	<section id="contactBDE">
 		<!-- Title -->
-		<h1 id="contactTittle">Nous contacter</h1>
+		<h2 id="contactTittle">Nous contacter</h2>
 		<!-- Open the form and add an id to the CSS file. -->
 		{!! Form::open(['url' => 'contact', 'id' => 'formContact']) !!} 
 			<!-- add a label 'email' with text and name for when we click on the text we go on the square. -->
