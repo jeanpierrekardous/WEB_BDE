@@ -58,6 +58,16 @@
 								</a>
 							<?php
 							}
+							if (session('role') == 'admin') {
+							?>
+								<a href="{{url('events/delete/' . $resultEvents->ID_evenement_officiel)}}" class="linkDeleteEventOne"><p class="deleteEvent">SUPRIMMER</p></a>
+							<?php
+							}
+							else if(session('role') == 'cesi'){
+							?>
+								<a href="{{url('events/signal/' . $resultEvents->ID_evenement_officiel)}}" class="linkDeleteEventOne"><p class="deleteEvent">SIGNALER</p></a>
+							<?php
+							}
 							?>
 						</article>
 					@endif

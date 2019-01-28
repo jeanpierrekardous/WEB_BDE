@@ -268,6 +268,7 @@
 	border: 2px solid green;
 	border-radius: 10px;
 	padding: 10px;
+	margin: 0;
 }
 .downloadPicture{
 	width: 100%;
@@ -293,5 +294,31 @@
 	padding: 10px;
 }
 .deleteComment:hover{
+	background-color: red;
+}
+.linkDeleteEventPicture{
+	text-decoration: none;
+	width: 100%;
+}
+.deletePicturet{
+	color: #000000;
+	border: 2px solid red;
+	border-radius: 10px;
+	padding: 10px;
+}
+.deletePicturet:hover{
+	background-color: red;
+}
+.linkDeleteEventOne{
+	text-decoration: none;
+	width: 100%;
+}
+.deleteEvent{
+	color: #000000;
+	border: 2px solid red;
+	border-radius: 10px;
+	padding: 10px;
+}
+.deleteEvent:hover{
 	background-color: red;
 }

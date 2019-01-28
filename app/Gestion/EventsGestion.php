@@ -3,6 +3,7 @@
 namespace App\Gestion;
 
 use Illuminate\Support\Facades\DB;
+use Mail;
 
 class EventsGestion
 {
@@ -100,6 +101,48 @@ class EventsGestion
 
 		return true;
 
+	}
+
+	public function delPicture($n){
+
+		DB::connection('mysql3')->statement('CALL delPictureEvent(?)',[$n]);
+
+		return true;
+	}
+
+	public function delEvents($n){
+
+		DB::connection('mysql3')->statement('CALL delEvents(?)',[$n]);
+
+		return true;
+
+	}
+
+	public function signalCom($n){
+
+		Mail::send('Events/signalcommentary', array('n' => $n), function($message){
+            $message->to('elcoco.01@orange.fr')->subject("Signalement")->from(session('email'));
+		});
+
+		return true;
+	}
+
+	public function signalPic($n){
+
+		Mail::send('Events/signalpicture', array('n' => $n), function($message){
+            $message->to('elcoco.01@orange.fr')->subject("Signalement")->from(session('email'));
+		});
+
+		return true;
+	}
+
+	public function signalEve($n){
+
+		Mail::send('Events/signalevent', array('n' => $n), function($message){
+            $message->to('elcoco.01@orange.fr')->subject("Signalement")->from(session('email'));
+		});
+
+		return true;
 	}
 }
 ?>

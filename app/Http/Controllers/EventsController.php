@@ -81,4 +81,41 @@ class EventsController extends Controller
         return redirect($_SERVER['HTTP_REFERER']);
 
     }
+
+    public function deletePicture($n, EventsGestion $gestion){
+
+        $gestion->delPicture($n);
+
+        return redirect($_SERVER['HTTP_REFERER']);
+    }
+
+    public function deleteEvents($n, EventsGestion $gestion){
+
+        $gestion->delEvents($n);
+
+        return redirect($_SERVER['HTTP_REFERER']);
+
+    }
+
+    public function signalCommentary($n, EventsGestion $gestion){
+
+        $gestion->signalCom($n);
+
+        return redirect($_SERVER['HTTP_REFERER']);
+
+    }
+
+    public function signalPicture($n, EventsGestion $gestion){
+
+        $gestion->signalPic($n);
+
+        return redirect($_SERVER['HTTP_REFERER']);
+    }
+
+    public function signalEve($n, EventsGestion $gestion){
+
+        $gestion->signalEve($n);
+
+        return redirect($_SERVER['HTTP_REFERER']);
+    }
 }

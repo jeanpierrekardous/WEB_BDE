@@ -55,7 +55,14 @@ Route::get('events/like/{n}', 'EventsController@getLikePictureEvent')->where('n'
 
 Route::get('events/comment/{n}', 'EventsController@getComment')->where('n', '[0-9]+');
 Route::post('events/comment/{n}', 'EventsController@postComment')->where('n', '[0-9]+');
+Route::get('events/delete/picture/{n}', 'EventsController@deletePicture')->where('n', '[0-9]+');
 Route::get('events/comment/delete/{n}', 'EventsController@deleteComment')->where('n', '[0-9]+');
+Route::get('events/delete/{n}', 'EventsController@deleteEvents')->where('n', '[0-9]+');
+Route::get('events/comment/signal/{n}', 'EventsController@signalCommentary')->where('n', '[0-9]+');
+Route::get('events/signal/picture/{n}', 'EventsController@signalPicture')->where('n', '[0-9]+');
+Route::get('events/signal/{n}', 'EventsController@signalEve')->where('n', '[0-9]+');
+
+Route::get('admin/account', 'AdminController@manageAccount');
 
 Route::get('CGV', function(){
 	return view('CGV/cgv');

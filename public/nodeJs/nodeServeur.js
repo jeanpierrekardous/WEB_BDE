@@ -11,9 +11,9 @@ var app = express();
 var myRouter = express.Router(); 
  
 // Je vous rappelle notre route (/piscines).  
-myRouter.route('/projet/WEB_BDE/public/info')
+myRouter.route('www.cesi-bde.com/info')
 .get(function(req,res){ 
-	  res.json({message : "test", methode : req.method});
+	  res.json({message : "test", name : req.query.name, methode : req.method});
 })
 //show map of a fixed position
 

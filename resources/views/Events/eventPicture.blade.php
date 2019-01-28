@@ -68,6 +68,16 @@
 								</div>
 							<?php
 							}
+							if (session('role') == 'admin') {
+							?>
+								<a href="{{url('events/delete/picture/' . $pictures->IDPhotos)}}" class="linkDeleteEventPicture"><p class="deletePicturet">SUPRIMMER</p></a>
+							<?php
+							}
+							else if(session('role') == 'cesi'){
+							?>
+								<a href="{{url('events/signal/picture/' . $pictures->IDPhotos)}}" class="linkDeleteEventPicture"><p class="deletePicturet">SIGNALER</p></a>
+							<?php
+							}
 						?>
 					</article>
 				@endforeach

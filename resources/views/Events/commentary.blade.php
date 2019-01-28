@@ -46,6 +46,11 @@
 						<a href="{{url('events/comment/delete/' . $comments->IDCommentaire)}}" class="linkDeleteEvent"><p class="deleteComment">SUPRIMMER</p></a>
 					<?php
 					}
+					else if(session('role') == 'cesi'){
+					?>
+						<a href="{{url('events/comment/signal/' . $comments->IDCommentaire)}}" class="linkDeleteEvent"><p class="deleteComment">SIGNALER</p></a>
+					<?php
+					}
 					?>
 				</article>
 				@endforeach()
