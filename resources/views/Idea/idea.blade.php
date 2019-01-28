@@ -42,6 +42,15 @@
 									<p class="vote"><?php echo $idea->vote; ?>
 									</p>
 								</div>
+								<div class="adminPanel">
+									<?php
+									if (session('role') == 'admin') {
+									?>
+										<a href="idea/delete/<?php echo $idea->ID_idee_table ?>" class="linkDeleteIdea"><p class="deleteIdea">SUPRIMMER</p></a>
+									<?php
+									}
+									?>
+								</div>
 							</article>
 						@endif
 					@endforeach

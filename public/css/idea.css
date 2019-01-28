@@ -126,3 +126,17 @@
 .connectNeed:hover{
 	background-color: #5B88D9;
 }
+.linkDeleteIdea{
+	text-decoration: none;
+}
+.deleteIdea{
+	color: #000000;
+	font-weight: bold;
+	border: 2px solid red;
+	border-radius: 10px;
+	width: 100%;
+	padding: 10px;
+}
+.deleteIdea:hover{
+	background-color: red;
+}
