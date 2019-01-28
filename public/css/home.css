@@ -174,7 +174,7 @@
 	display: none;
 }
 
-#droitsBurger{
+#doobleCheeseBurger{
 	display: none;
 }
 
@@ -239,5 +239,23 @@
     	display: flex;
     	justify-content: center;
     	text-align: center;
+    }
+    #doobleCheeseBurger{
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	text-align: center;
+    	width: 500px;
+    	color: black;
+    	background-color: white;
+    	font-size: 25px;
+
+    }
+    #footerHome{
+    	height: 100px;
+    }
+
+    .disparition{
+    	display: none;
     }
 }
