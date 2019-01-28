@@ -6,7 +6,7 @@
 
 @section('contenu')
 	<section id="cGVGroup">
-		<h1 id="cGVTittle">Conditions générales de vente</h1>
+		<h2 id="cGVTittle">Conditions générales de vente</h2>
 		<p class="cGVTexte Center">
 			La société Cesi, 30 rue Cambronne, 75015 Paris, au Capital Social de 1,1M€<br> 
 			Immatriculée au Registre du Commerce et des Sociétés de CESI SIRET, 

@@ -83,13 +83,13 @@
     	</section>
 		<!-- Footer with the legal mentions, the phone number if you have problems and the copyright -->
 		<footer id="footerHome">
-		    <a href="CGV" id="legalMention"><p class="information_legal">
+		    <a href="CGV" class="legalMention"><p class="information_legal">
 		       Condition générale de vente
 		    </p></a> 
 		    <p class="delimitor">
 		        &nbsp;
 		    </p>
-		     <a href="CGU" id="legalMention"><p class="information_legal">
+		     <a href="CGU" class="legalMention"><p class="information_legal">
 		        Conditions générales d'utilisation
 		    </p></a>
 		    <p class="delimitor">
@@ -102,13 +102,13 @@
 		    <p class="delimitor">
 		        &nbsp;
 		    </p>
-		    <a href="right" id="legalMention"><p class="information_legal">
+		    <a href="right" class="legalMention"><p class="information_legal">
 		        Mentions légales
 		    </p></a>
 		     <p class="delimitor">
 		        &nbsp;
 		    </p>
-		    <a href="PPD" id="legalMention"><p class="information_legal">
+		    <a href="PPD" class="legalMention"><p class="information_legal">
 		        Politique de protection des données
 		    </p></a>
 		</footer>
