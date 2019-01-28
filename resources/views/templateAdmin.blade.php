@@ -60,8 +60,7 @@
 			<nav id="band">
 			    <!-- In the following section there are the name of the menu like CCONTACT, EVENEMENT... With the little picture on the left of the name  -->
 			    <ul>
-			        <li><a href="info"><i class="fas fa-info"></i> Test</a></li>
-			        <li id="bodermake"><a href="contact"><i class="fas fa-envelope"></i> Test2</a></li>
+			        <li id="bodermake"><a href="admin/account"><i class="fas fa-user-plus"></i></i> Gérer les comptes</a></li>
 			    </ul>
 			    <!-- Here, it's the link to facebook, youtube and instagram in order to follow the CESI and the BDE -->
 			    <div id="headerLink">
