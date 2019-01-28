@@ -93,5 +93,13 @@ class EventsGestion
 
 		return true;
 	}
+
+	public function deleteCom($n){
+
+		DB::connection('mysql3')->statement('CALL deleteCommentary(?)',[$n]);
+
+		return true;
+
+	}
 }
 ?>

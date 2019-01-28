@@ -44,4 +44,12 @@ class IdeaController extends Controller
     	return redirect('events');
 
     }
+
+    public function getSignal($n, IdeaGestion $gestion){
+
+    	$gestion->sendMailSignal($n);
+
+    	return redirect('idea');
+
+    }
 }

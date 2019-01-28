@@ -3,6 +3,7 @@
 namespace App\Gestion;
 
 use Illuminate\Support\Facades\DB;
+use Mail;
 
 class IdeaGestion
 {
@@ -44,6 +45,16 @@ class IdeaGestion
 
 		print_r($idea);
 		DB::connection('mysql3')->statement('CALL addEvent(?,?,?,?,?,?)',[$idea[0]->nom, $idea[0]->description, $request['date'], $request['type'], "Une seul fois", $idea[0]->image]);
+
+		return true;
+
+	}
+
+	public function sendMailSignal($n){
+
+		Mail::send('Idea/signal', array('n' => $n), function($message){
+            $message->to('elcoco.01@orange.fr')->subject("Signalement")->from(session('email'));
+		});
 
 		return true;
 

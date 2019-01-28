@@ -36,9 +36,18 @@
 			</div>
 			<div id="listComment">
 				@foreach($comment as $comments)
+				<article class="commentaryFlex">
 					<p class="commentAll">
 						<?php echo $comments->commentaire; ?>
 					</p>
+					<?php
+					if (session('role') == 'admin') {
+					?>
+						<a href="{{url('events/comment/delete/' . $comments->IDCommentaire)}}" class="linkDeleteEvent"><p class="deleteComment">SUPRIMMER</p></a>
+					<?php
+					}
+					?>
+				</article>
 				@endforeach()
 			</div>
 		<?php

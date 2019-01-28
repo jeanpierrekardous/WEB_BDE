@@ -55,6 +55,7 @@ Route::get('events/like/{n}', 'EventsController@getLikePictureEvent')->where('n'
 
 Route::get('events/comment/{n}', 'EventsController@getComment')->where('n', '[0-9]+');
 Route::post('events/comment/{n}', 'EventsController@postComment')->where('n', '[0-9]+');
+Route::get('events/comment/delete/{n}', 'EventsController@deleteComment')->where('n', '[0-9]+');
 
 Route::get('CGV', function(){
 	return view('CGV/cgv');
@@ -84,3 +85,4 @@ Route::get('idea/delete/{n}', 'IdeaController@getDelete')->where('n', '[0-9]+');
 
 Route::get('idea/add/event/{n}', 'IdeaController@getEventByIdea')->where('n', '[0-9]+');
 Route::post('idea/add/event/{n}', 'IdeaController@postEventByIdea')->where('n', '[0-9]+');
+Route::get('idea/signal/{n}', 'IdeaController@getSignal')->where('n', '[0-9]+');

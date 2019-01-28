@@ -73,4 +73,12 @@ class EventsController extends Controller
         return redirect($URL);
 
     }
+
+    public function deleteComment($n, EventsGestion $gestion){
+
+        $gestion->deleteCom($n);
+
+        return redirect($_SERVER['HTTP_REFERER']);
+
+    }
 }
