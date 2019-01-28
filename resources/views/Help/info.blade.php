@@ -6,7 +6,7 @@
 
 @section('contenu')
 	<section id="infoGroup">
-		<h1 id="infoTittle">Bureau des élèves</h1>
+		<h2 id="infoTittle">Bureau des élèves</h2>
 		<!-- Here, there are information about us, which activities and where we are situated -->
 		<article class="infoSize">
 			<h2 class="secondTittle">Qui sommes-nous ?</h2>
