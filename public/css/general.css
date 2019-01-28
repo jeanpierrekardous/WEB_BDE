@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/polices/roboto/Roboto-Thin.woff') format('woff'); 
+    src: url('../fonts/polices/roboto/Roboto-Light.ttf') format('ttf'); 
 }
 body{
 	margin: 0;
