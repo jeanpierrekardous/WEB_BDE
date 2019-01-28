@@ -8,7 +8,7 @@ function ajaxTest(dele, component){
 	xhttp.onreadystatechange = function() {
 	    if (this.status == 200) {
 	    	
-	     	component.parent().css('display', 'none');
+	     	component.parent().remove();
 
 	    }
 	};
