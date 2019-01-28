@@ -30,5 +30,12 @@ class IdeaGestion
 			return false;
 		}
 	}
+
+	public function getDeleteIdea($n){
+
+		DB::connection('mysql3')->statement('CALL getDeleteIdea(?)',[$n]);
+
+		return true;
+	}
 }
 ?>
