@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/cgv.css">
 		<link rel="stylesheet" type="text/css" href="css/cgu.css">
 		<link rel="stylesheet" type="text/css" href="css/ppd.css">
+		<link rel="stylesheet" type="text/css" href="css/admin.css">
     	@yield('title')
     </head>
     <body id="font">
