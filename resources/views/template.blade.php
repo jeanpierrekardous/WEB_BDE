@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<link rel="shortcut icon" type="image/x-icon" href="{{url('favicon.ico')}}" />
 		<!-- Link to all .css -->
-		<link rel="stylesheet" type="text/css" media="screen and (max-width: 1224px)" href="{{url('css/littleHome.css')}}">
+		<link rel="stylesheet" type="text/css"href="">
 		<link rel="stylesheet" type="text/css" href="{{url('css/home.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/general.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/contact.css')}}">
@@ -51,34 +51,39 @@
 					?>
 		            <li><a href="{{url('help')}}">Aide <i class="fas fa-question-circle"></i></a></li>
 		        </ul>
-		        <ul id="hamburgermenu">
-		        	< <!-- Menu(login...) -->
+		        <ul id="hamberger">
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+				</ul>
+				<ul id="flexboxmenuResponsive">
+		            <!-- Menu(login...) -->
 		            <?php
 					if(empty(session('email'))){
 					?>
-						<li><a href="{{url('login')}}">Connexion</a></li>
-		            	<li><a href="{{url('signup')}}">Inscription</a></li>
+						<li id="connexionBurger"><a href="{{url('login')}}">Connexion</a></li>
+		            	<li id="inscriptionBurger"><a href="{{url('signup')}}">Inscription</a></li>
 		            <?php
 					}
 					else{
 						if (session('role')=='admin') {
 						?>
-							<li><a href="{{url('admin')}}">Admin</a></li>
+							<li id="adminBurger"><a href="{{url('admin')}}">Admin</a></li>
 						<?php
 						}
 					?>
-						<li id="welcome">Bonjour <?php echo session('name'); ?> !</li>
-						<li><a href="{{url('logout')}}">Déconnexion</a></li>
+						<li id="welcome welcolmeBurger">Bonjour <?php echo session('name'); ?> !</li>
+						<li id="deconnecionBurger"><a href="{{url('logout')}}">Déconnexion</a></li>
 					<?php
 					}
 					?>
-		            <li><a href="{{url('help')}}">Aide <i class="fas fa-question-circle"></i></a></li>>
+		            <li id="helpBurger"><a href="{{url('help')}}">Aide <i class="fas fa-question-circle"></i></a></li>
 		        </ul>
 		    </nav>
 		    <!-- title and sub-title -->
 		    <div id="titlePresentation">
-		        <h1>Bureau des élèves</h1>
-		        <h2>Site événementiel du CESI avec une boutique en ligne</h2>
+		        <h1 id="titleBurger">Bureau des élèves</h1>
+		        <h2 id="secondTitleBurger">Site événementiel du CESI avec une boutique en ligne</h2>
 		    </div>
 		</header>
     	<!-- The main components of our home page in our website are in this following section -->
@@ -87,15 +92,15 @@
 			<nav id="band">
 			    <!-- In the following section there are the name of the menu like CCONTACT, EVENEMENT... With the little picture on the left of the name  -->
 			    <ul>
-			        <li><a href="{{url('info')}}"><i class="fas fa-info"></i> INFORMATIONS</a></li>
-			        <li><a href="{{url('idea')}}"><i class="far fa-lightbulb"></i> BOITE A IDEES</a></li>
-			        <li><a href="{{url('events')}}"><i class="far fa-calendar-alt"></i> &Eacute;VENEMENTS</a></li>
-			        <li><a href="{{url('shop')}}"><i class="fas fa-shopping-cart"></i> BOUTIQUE</a></li>
-			        <li id="bodermake"><a href="{{url('contact')}}"><i class="fas fa-envelope"></i> CONTACT</a></li>
+			        <li ><a href="{{url('info')}}" id="informationBurger"><i class="fas fa-info"></i> INFORMATIONS</a></li>
+			        <li ><a href="{{url('idea')}}" id="ideaBurger"><i class="far fa-lightbulb"></i> BOITE A IDEES</a></li>
+			        <li><a href="{{url('events')}}" id="évenementBurger"><i class="far fa-calendar-alt"></i> &Eacute;VENEMENTS</a></li>
+			        <li ><a href="{{url('shop')}}" id="boutiqueBurger"><i class="fas fa-shopping-cart"></i> BOUTIQUE</a></li>
+			        <li id="bodermake"><a href="{{url('contact')}}" id="contactBurger"><i class="fas fa-envelope"></i> CONTACT</a></li>
 			    </ul>
 			    <!-- Here, it's the link to facebook, youtube and instagram in order to follow the CESI and the BDE -->
 			    <div id="headerLink">
-			        <p class="second">Retrouvez-nous&nbsp;sur&nbsp;:</p>
+			        <p class="second" id="paragrapheBurger">Retrouvez-nous&nbsp;sur&nbsp;:</p>
 			        <div id="image">
 			            <a href="https://www.facebook.com/BDECesiLyon/" target="_Blank">
 			                <img src="{{url('fonts/pictures/logo_facebook.PNG')}}" alt="logo_facebook">
@@ -113,6 +118,9 @@
     	</section>
 		<!-- Footer with the legal mentions, the phone number if you have problems and the copyright -->
 		<footer id="footerHome">
+			<div id="droitsBurger">
+				
+			</div>
 		    <a href="{{url('CGV')}}" class="legalMention"><p class="information_legal">
 		       Condition générale de vente
 		    </p></a> 
@@ -142,5 +150,7 @@
 		        Politique de protection des données
 		    </p></a>
 		</footer>
+		<script type="text/javascript" src="{{url('js/jquery-3.3.1.min.js')}}"></script>
+		<script type="text/javascript" src="{{url('js/menu.js')}}"></script>
     </body>
 </html>

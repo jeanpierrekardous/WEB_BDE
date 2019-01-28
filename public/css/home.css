@@ -165,3 +165,79 @@
 #flexboxmenu li a:hover{
 	color: rgb(255, 194, 82);
 }
+
+#hamberger{
+	display: none;
+}
+
+#flexboxmenuResponsive{
+	display: none;
+}
+
+#droitsBurger{
+	display: none;
+}
+
+@media screen and (max-width: 1224px)
+{
+    #hamberger{
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: flex-end;
+    	margin-right: 20px;
+    	margin-top: 0;
+    }
+
+    #hamberger li{
+    	background-color: #ffffff;
+    	margin-top: 10px;
+    	list-style: none;
+    	width: 80px;
+    	height:20px;
+    }
+
+    #flexboxmenu{
+    	display: none;
+    }
+
+    #informationBurger{
+    	font-size: 23px;
+    }
+
+    #ideaBurger{
+    	font-size: 23px;
+    }
+    #évenementBurger{
+    	font-size: 23px;
+    }
+    #boutiqueBurger{
+    	font-size: 23px;
+    }
+    #contactBurger{
+    	font-size: 23px;
+    }
+    .legalMention{
+    	font-size: 28px;
+    }
+    #paragrapheBurger{
+    	font-size: 28px;
+    }
+    #band{
+    	width: 400px;
+    }
+    #titleBurger{
+    	font-size: 50px;
+    }
+
+    #headerHome{
+    	height: 340px;
+    }
+    #secondTitleBurger{
+    	font-size: 40px;
+    	margin-top: 0;
+    	display: flex;
+    	justify-content: center;
+    	text-align: center;
+    }
+}
