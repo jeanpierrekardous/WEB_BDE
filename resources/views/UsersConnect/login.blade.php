@@ -6,7 +6,7 @@
 
 @section('contenu')
 	<section id="login">
-		<h1 id="titlelogin">Vous connecter</h1>
+		<h2 id="titlelogin">Vous connecter</h2>
 		<!-- We open the form to start the connexion between the visitor and the web site -->
 		{!! Form::open(['url' => 'login', 'id' => 'loginForm']) !!}
 			<!-- We introduce the label email who have a link with the database -->
