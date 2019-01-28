@@ -28,3 +28,15 @@
 	width: 100%;
 	padding: 10px;
 }
+
+.articleShop{
+	height: 100px;
+	width: 200px;
+	border-radius: 10px;
+}
+
+.panierShopping{
+	border: 2px solid #5B88D9;
+	border-radius: 10px;
+}
+
