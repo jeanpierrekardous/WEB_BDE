@@ -21,4 +21,12 @@ class IdeaController extends Controller
 
     	return redirect('idea');
     }
+
+    public function getDelete($n, IdeaGestion $gestion){
+
+    	$gestion->getDeleteIdea($n);
+
+    	return redirect('idea');
+
+    }
 }

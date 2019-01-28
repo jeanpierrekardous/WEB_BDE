@@ -47,7 +47,13 @@
 									if (session('role') == 'admin') {
 									?>
 										<a href="idea/delete/<?php echo $idea->ID_idee_table ?>" class="linkDeleteIdea"><p class="deleteIdea">SUPRIMMER</p></a>
+										<a href="idea/add/event/<?php echo $idea->ID_idee_table ?>" class="linkAddIdeaToEvent"><img src="{{url('fonts/pictures/add.png')}}" alt="ajouter" class="addIdeaToEvent"></a>
 									<?php
+									}
+									else if (session('role') == 'cesi') {
+									?>
+										<a href="idea/signal/<?php echo $idea->ID_idee_table ?>" class="linkDeleteIdea"><p class="deleteIdea">SIGNALER</p></a>
+									<?php		
 									}
 									?>
 								</div>
