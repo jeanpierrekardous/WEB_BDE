@@ -175,5 +175,6 @@
 			<p id="lastCGVTexte">
 				Toutes les clauses figurant dans les présentes conditions générales de vente, ainsi que toutes les opérations d’achat et de vente qui y sont visées, seront soumises au droit français.
 			</p>
+		</article>
 	</section>
 @endsection
