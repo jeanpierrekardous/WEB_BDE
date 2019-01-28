@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<link rel="shortcut icon" type="image/x-icon" href="{{url('favicon.ico')}}" />
 		<!-- Link to all .css -->
+		<link rel="stylesheet" type="text/css" media="screen and (max-width: 1224px)" href="{{url('css/littleHome.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/home.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/general.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/contact.css')}}">
