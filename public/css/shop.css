@@ -125,3 +125,45 @@ h3{
 	font-size: 24px;
 	margin-top: 0;
 }
+#listAllArticleShop{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.oneArticleShop{
+	border-radius: 10px;
+	border: 5px double #000000;
+	margin: 10px;
+	width: 300px;
+	height: 100%;
+	padding: 10px;
+}
+.picturesShop{
+	width: 280px;
+	height: 280px;
+}
+.miseCSS{
+	border: 2px dotted #5B88D9;
+	border-radius: 10px;
+	color: red;
+	font-weight: bold;
+}
+.magtop{
+	margin-top: 0;
+}
+.margbot{
+	margin-bottom: 0;
+}
+.titleArticleShop{
+	border-radius: 10px;
+	border: 2px solid #000000;
+}
+.commentArticleShop{
+	overflow-y: scroll;
+	height: 100px;
+	border-radius: 10px;
+	border: 1px dashed #000000;
+}

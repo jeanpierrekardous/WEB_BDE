@@ -48,6 +48,18 @@
 			</form>
 		</div>
 	</div>
+	<div id="listAllArticleShop">
+		@foreach($article as $art)
+			<article class="oneArticleShop">
+				<h4 class="titleArticleShop"><?php echo $art->nom; ?></h4>
+				<?php echo"<img src='" . $art->image . "' alt='pictureShop' class='picturesShop'>"; ?>
+				<p class="miseCSS magtop">Catégorie : <?php echo $art->categorie; ?></p>
+				<p class="commentArticleShop"><?php echo $art->commentaire; ?></p>
+				<p class="miseCSS">Quantités : <?php echo $art->quantite; ?>€</p>
+				<p class="miseCSS margbot">Prix : <?php echo $art->prix; ?>€</p>
+			</article>
+		@endforeach
+	</div>
 </section>
 
 @endsection

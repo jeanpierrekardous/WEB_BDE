@@ -81,9 +81,7 @@ Route::get('admin', function(){
 	return view('Admin/admin');
 });
 
-Route::get('shop', function(){
-	return view('Shop/shop');
-});
+Route::get('shop', 'ShopController@getShop');
 
 Route::get('writeidea', 'WriteideaController@getFormIdea');
 Route::post('writeidea', 'WriteideaController@postFormIdea');
