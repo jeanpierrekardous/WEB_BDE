@@ -41,11 +41,11 @@ Route::get('right', function(){
 });
 
 Route::get('contact', 'ContactController@getContact');
-Route::post('contact', 'ContactController@postContact');
 
 Route::get('idea', 'IdeaController@getIdea');
 
 Route::get('events', 'EventsController@getEventPage');
+Route::post('events', 'EventsController@addEventAdmin');
 Route::get('signup/events/{n}', 'EventsController@getSignup')->where('n', '[0-9]+');
 
 Route::get('events/{n}', 'EventsController@getPicture')->where('n', '[0-9]+');

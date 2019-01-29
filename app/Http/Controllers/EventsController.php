@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Gestion\EventsGestion;
 use App\Http\Requests\CommentaryRequest;
 use App\Http\Requests\PictureRequest;
+use App\Http\Requests\EventRequest;
 
 class EventsController extends Controller
 {
