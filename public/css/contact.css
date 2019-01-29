@@ -81,5 +81,38 @@
 	margin: auto;
 	width: 66%;
 	text-align: center;
+}
+
+@media screen and (max-width: 1224px){
+
+	#contactTittle{
+		font-size: 50px;
+		width: 80%
+	}
+
+	#formContact{
+		width: 80%;
+	}
+
+	#email{
+		font-size: 28px;
+	}
+
+	#subject{
+		font-size: 28px;
+	}
+
+	#contactMessage{
+		font-size: 28px;
+	}
+
+	#submit{
+		font-size: 28px;
+		width: 200px;
+	}
+
+	#contactTexte{
+		font-size: 28px;
+	}
 
 }
