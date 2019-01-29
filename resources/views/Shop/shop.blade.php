@@ -51,6 +51,7 @@
 		</div>
 	</div>
 	<div id="listAllArticleShop">
+		<!-- Add diferents article for the shop because we have data from the database -->
 		@foreach($article as $art)
 			<article class="oneArticleShop">
 				<h4 class="titleArticleShop"><?php echo $art->nom; ?></h4>
@@ -64,5 +65,4 @@
 		@endforeach
 	</div>
 </section>
-
 @endsection
