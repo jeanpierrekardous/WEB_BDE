@@ -42,9 +42,9 @@
 					</select>
 				</form>
 			</div>
-			<h3>Liste des articles</h3>
+			<h3 id="listArticalShop">Liste des articles</h3>
 			<form id="auto">
-				<input type="text" name="autocomplete" id="autocomplete">
+				<i class="fas fa-search-plus"></i><p>&nbsp;&nbsp;</p><input type="text" name="autocomplete" id="autocomplete">
 			</form>
 		</div>
 	</div>
