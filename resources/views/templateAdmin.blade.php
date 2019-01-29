@@ -122,7 +122,7 @@
 	           <option value="legalMention">Mentions légales</option>
 	           <option value="PPD">Politique de protection des données</option>
        		</select>
-		    <a href="{{url('CGV')}}" class="legalMention"><p class="information_legal">
+		    <a href="{{url('CGV')}}" class="legalMention"><p class="information_legal disparition">
 		       Condition générale de vente
 		    </p></a> 
 		    <p class="delimitor">
