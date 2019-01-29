@@ -322,3 +322,8 @@
 .deleteEvent:hover{
 	background-color: red;
 }
+.titleAddEventAdmin{
+	background-color: rgb(255, 194, 82);
+	padding: 10px;
+	width: 100%;
+}

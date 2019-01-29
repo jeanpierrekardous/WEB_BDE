@@ -63,6 +63,7 @@ Route::get('events/signal/picture/{n}', 'EventsController@signalPicture')->where
 Route::get('events/signal/{n}', 'EventsController@signalEve')->where('n', '[0-9]+');
 
 Route::get('admin/account', 'AdminController@manageAccount');
+Route::post('admin', 'AdminController@createAccount');
 
 Route::get('CGV', function(){
 	return view('CGV/cgv');

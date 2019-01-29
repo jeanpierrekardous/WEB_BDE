@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Gestion\AdminGestion;
+use App\Http\Requests\AdminRequest;
 
 class AdminController extends Controller
 {
@@ -17,5 +18,12 @@ class AdminController extends Controller
 
     	return view('Admin/adminaccount')->withAllAccount($allAccount);
 
+    }
+
+    public function createAccount(AdminGestion $gestion, AdminRequest $request){
+
+    	$gestion->createUser($request);
+
+    	return redirect($_SERVER['HTTP_REFERER']);
     }
 }
