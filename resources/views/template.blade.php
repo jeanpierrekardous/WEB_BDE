@@ -118,6 +118,7 @@
 		<!-- Footer with the legal mentions, the phone number if you have problems and the copyright -->
 		<footer id="footerHome">
 			<select name="rightBurger" id="doobleCheeseBurger" onchange="tripleCheeseBurger(this.value);">
+				<option value="copyright"> Copyright 2019 © BDE cesi Lyon | Tous droits réservés</option>
 	           <option value="CGV">Condition générale de vente</option>
 	           <option value="CGU">
 		        Conditions générales d'utilisation</option>

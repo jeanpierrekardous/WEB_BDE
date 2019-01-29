@@ -245,10 +245,13 @@
     	justify-content: center;
     	align-items: center;
     	text-align: center;
-    	width: 500px;
+    	margin: 20px;
+    	margin-left: 70px;
+    	width: 800px;
     	color: black;
     	background-color: white;
-    	font-size: 25px;
+    	font-size: 30px;
+    	height: 50px;
 
     }
     #footerHome{
