@@ -10,7 +10,7 @@ elementMenu.onclick = function() {
 		$("#flexboxmenuResponsive li a").css("color", "white").css("text-decoration", "none").css("font-size", "30px").css("margin-top", "30px").css("padding", "5px");
 		$("#helpBurger").css("margin", "10px 0 10px 0").css("font-size", "30px").css("text-decoration", "none");
 		$("#welcomeBurger").css("margin", "10px 0 10px 0").css("font-size", "30px").css("text-decoration", "none");
-		$("#deconnexionBurger").css("margin", "10px 0 10px 0").css("font-size", "30px").css("text-decoration", "none");
+		$("#deconnecionBurger").css("margin", "10px 0 10px 0").css("font-size", "30px").css("text-decoration", "none");
 		$("#adminBurger").css("margin", "10px 0 10px 0").css("font-size", "30px").css("text-decoration", "none");
 		$("#connexionBurger").css("margin", "10px 0 10px 0").css("font-size", "30px").css("text-decoration", "none");
 		$("#inscriptionBurger").css("margin", "10px 0 10px 0").css("font-size", "30px").css("text-decoration", "none");
