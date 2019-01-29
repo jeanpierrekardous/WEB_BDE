@@ -105,5 +105,68 @@ label{
 
 @media screen and (max-width: 1224px)
 {
+	#titleSignup{
+		font-size: 50px;
+		width: 80%
+	}
+
+	#titlelogin{
+		font-size: 50px;
+		width: 80%
+	}
+
+	#loginForm{
+		width: 80%;
+	}
+
+	#signupForm{
+		width: 80%;
+	}
+
+	#firstname{
+		font-size: 28px;
+	}
+	#name{
+		font-size: 28px;
+	}
+
+	#emailSignup{
+		font-size: 28px;
+	}
+
+	#country{
+		font-size: 28px;
+		background-color: white;
+		color: black;
+		height: 35px;
+	}
+
+	.help{
+		font-size: 28px;
+	}
+
+	#password_confirmation{
+		font-size: 28px;
+	}
+
+	#password{
+		font-size: 28px;
+	}
+
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
