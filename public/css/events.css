@@ -343,4 +343,15 @@
 	label{
 		font-size: 28px;
 	}
+	#publishedButton{
+		width: 80%;
+		height: 80px;
+		font-size: 28px;
+	}
+	.commentTittle{
+		width: 70%;
+	}
+	#contactMessage{
+		font-size: 28px;
+	}
 }

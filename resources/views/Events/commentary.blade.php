@@ -9,14 +9,14 @@
 		<?php
 		if(empty(session('email'))){
 		?>
-			<h1 id="addpicture">Ajouter une photo</h1>
-			<a href="{{url('login')}}" class="redirectLogin"><p class="connectNeed">
+			<h1 id="addpicture fontRes">Ajouter une photo</h1>
+			<a href="{{url('login')}}" class="redirectLogin fontRes"><p class="connectNeed">
 			Veuillez-vous connecter !</p></a>
 		<?php
 		}
 		else{
 		?>
-			<h2 class="commentTittle">Publier un commentaire</h2>
+			<h2 class="commentTittle fontRes">Publier un commentaire</h2>
 			<?php 
 			$adresse = $_SERVER['REQUEST_URI'];
 			?>
@@ -28,7 +28,7 @@
 	        	{!! $errors->first('bodies','<p class="help">:message</p>') !!}
 				{!! Form::submit('Envoyer !', ['id' => 'publishedButton']) !!}
 			</form>
-			<h2 class="commentTittle">Voici la liste des commentaires</h2>
+			<h2 class="commentTittle fontRes">Voici la liste des commentaires</h2>
 			<div id="pictureShow">
 				@foreach($linkPicture as $picture)
 					<?php echo"<img src='../../" . $picture->link . "' alt='pictureEvent' class='picturesEvent'>"; ?>
