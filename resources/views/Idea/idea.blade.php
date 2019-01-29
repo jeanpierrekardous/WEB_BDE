@@ -31,6 +31,7 @@
 			else{
 			?>
 				<div id="ideaContent">
+					<!-- We create an article foreach idea present in the database -->
 					@foreach ($idea as $idea)
 						@if($idea->nom != null)
 							<article class="ideaListAll">
@@ -42,6 +43,7 @@
 									<p class="vote"><?php echo $idea->vote; ?>
 									</p>
 								</div>
+								<!-- If the user is an admin, then we add the control panel -->
 								<div class="adminPanel">
 									<?php
 									if (session('role') == 'admin') {

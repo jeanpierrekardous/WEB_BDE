@@ -7,6 +7,7 @@
 @section('contenu')
 	<section id="login">
 		<h1 id="titlelogin">Vous connecter</h1>
+		<!-- return this page if there are errors during the login -->
 		{!! Form::open(['url' => 'login', 'id' => 'loginForm']) !!}
 			{!! Form::label('email', 'Entrer votre Email :') !!}
 			{!! Form::email('email', null , array('autocomplete' => 'off', 'id' => 'emailSignup', 'placeholder' => 'Votre email', 'spellcheck' => 'false')) !!}

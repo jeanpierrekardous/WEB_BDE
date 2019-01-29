@@ -6,6 +6,7 @@
 
 @section('contenu')
 	<section id="ppdGroup">
+		<!-- Politic of data protection where which article is an article of law -->
 		<article class="ppdSize">
 			<h2 id="ppdTittle">Politique de protection des données personnelles à partir du 25 mai 2018</h2>
 
