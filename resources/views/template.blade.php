@@ -17,7 +17,6 @@
 		<link rel="stylesheet" type="text/css" href="{{url('css/cgv.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/cgu.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/ppd.css')}}">
-		<link rel="stylesheet" type="text/css" href="{{url('css/shop.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{url('css/admin.css')}}">
     	@yield('title')
     </head>
@@ -156,6 +155,7 @@
 		</footer>
 		<script type="text/javascript" src="{{url('js/jquery-3.3.1.min.js')}}"></script>
 		<script type="text/javascript" src="{{url('js/menu.js')}}"></script>
+		<script type="text/javascript" src="{{url('js/bootstrap.bundle.min.js')}}"></script>
 		<script>
 			function tripleCheeseBurger(value){
 				switch(value){

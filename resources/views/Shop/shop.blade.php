@@ -1,20 +1,35 @@
 @extends('template')
 
 @section('title')
+	<link rel="stylesheet" type="text/css" href="{{url('css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url('css/shop.css')}}">
 	<title>Boutique du BDE</title>
 @endsection
 
 @section('contenu')
 <section id="shopGroup">
 	<h2 id="shopTittle">Boutique du BDE</h2>
-	<article id="shopSize">
-		<a href="panier" id="panierShop"><img src="https://us.123rf.com/450wm/jongjet303/jongjet3031703/jongjet303170300216/73540773-aper%C3%A7u-de-l-ic%C3%B4ne-du-panier-ic%C3%B4ne-pour-la-conception-du-site-web-logo.jpg?ver=6" alt="panier"></a>
+	<!-- Add carousel for article -->
+	<article id="carousel">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators listIndi">
+		    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active clickOnSlide"></li>
+		    	<li data-target="#carouselExampleIndicators" data-slide-to="1" class="clickOnSlide"></li>
+		        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="clickOnSlide"></li>
+		    </ol>
+			<div class="carousel-inner">
+			    <div class="carousel-item active">
+			        <img class="d-block w-100 carouImg" src="{{url('fonts/pictures/pull.jpg')}}" alt="First slide">
+			    </div>
+			    <div class="carousel-item">
+			       	<img class="d-block w-100 carouImg" src="{{url('fonts/pictures/pomme.jpg')}}" alt="Second slide">
+			    </div>
+			    <div class="carousel-item carouImg">
+			    <img class="d-block w-100" src="{{url('fonts/pictures/lunettes.jpg')}}" alt="Third slide">
+			    </div>
+			</div>
+		</div>
 	</article>
-	<article id="info">
-        <a href="panier">
-            <img src="https://www.michel-edouard-leclerc.com/sites/default/files/2018-04/Coca-Cola%20E.Leclerc.jpg" class="picturesbody" alt="article1">
-            <h3 class="namecategoryShop">Ajouter au panier</h3>
-        </a>
 </section>
 
 @endsection
