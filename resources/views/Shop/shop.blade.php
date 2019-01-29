@@ -57,7 +57,7 @@
 				<?php echo"<img src='" . $art->image . "' alt='pictureShop' class='picturesShop'>"; ?>
 				<p class="miseCSS magtop">Catégorie : <?php echo $art->categorie; ?></p>
 				<p class="commentArticleShop"><?php echo $art->commentaire; ?></p>
-				<p class="miseCSS">Quantités : <?php echo $art->quantite; ?>€</p>
+				<p class="miseCSS">Quantités : <?php echo $art->quantite; ?></p>
 				<p class="miseCSS margbot">Prix : <?php echo $art->prix; ?>€</p>
 				<a href="{{url('shop/' . $art->IDArticle)}}"><p class="addToPanier">Ajouter au panier</p></a>
 			</article>
