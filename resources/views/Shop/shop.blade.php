@@ -9,6 +9,7 @@
 @section('contenu')
 <section id="shopGroup">
 	<h2 id="shopTittle">Boutique du BDE</h2>
+	<h3 id="popularity">Articles les plus populaire</h3>
 	<!-- Add carousel for article -->
 	<article id="carousel">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -30,6 +31,23 @@
 			</div>
 		</div>
 	</article>
+	<div id="slideSearchBarre">
+		<div id="sortBy">
+			<div id="selecte">
+				<p>Tier par :</p>
+				<form method="POST" action="{{url('shop')}}" id="chooseForm">
+					<select name="choose" id="choose">
+						<option value="">A~Z</option>
+						<option value="">Z~A</option>
+					</select>
+				</form>
+			</div>
+			<h3>Liste des articles</h3>
+			<form id="auto">
+				<input type="text" name="autocomplete" id="autocomplete">
+			</form>
+		</div>
+	</div>
 </section>
 
 @endsection

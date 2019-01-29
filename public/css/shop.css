@@ -70,7 +70,7 @@
 .clickOnSlide{
 	height: 20px !important;
 	width: 80px !important;
-	background-color: grey !important;
+	background-color: #E9E9E8 !important;
 }
 .slide{
 	height: 340px;
@@ -78,4 +78,43 @@
 .carousel-indicators li.active{
 	background-color: #5B88D9 !important;
 }
-
+#slideSearchBarre{
+	width: 100%;
+	background-color: #000000;
+	color: #ffffff;
+}
+#sortBy{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+#selecte{
+	display: flex;
+	align-items: center;
+	width: 30%;
+}
+#selecte p{
+	margin: 0 10px 0 0;
+}
+#autocomplete{
+	width: 100%;
+	text-align: left;
+	padding: 5px;
+}
+#auto{
+	width: 30%;
+}
+h3{
+	margin-bottom: 0;
+}
+#choose{
+	width: 100%;
+}
+#chooseForm{
+	width: 80%;
+}
+#popularity{
+	margin: 20px 0 20px 0;
+}
