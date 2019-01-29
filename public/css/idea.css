@@ -165,3 +165,34 @@
 	padding: 20px;
 	margin: 20px 0 0 0;
 }
+@media screen and (max-width: 1224px){
+	.ideaListAll{
+		width: 70%;
+	}
+	.eventListAll{
+		width: 70%;
+	}
+	#ideaTittle, #ideaSecondTittle, #EventAddTitle{
+		width: 80%;
+	}
+	.descriptionIdea{
+		width: 90%;
+	}
+	#formContact, #contactTittle{
+		width: 80%;
+	}
+	input{
+		font-size: 28px;
+	}
+	#submit{
+		width: 50%;
+		height: 80px;
+		font-size: 28px;
+	}
+	#contactTittle{
+		font-size: 30px;
+	}
+	.signuptoevent {
+		width: 100%;
+	}
+}
