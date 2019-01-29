@@ -55,3 +55,35 @@
 	text-align: justify;
 	justify-content: center;
 }
+
+@media screen and (max-width: 1224px)
+{
+	#cguTittle{
+		font-size: 50px;
+	}
+
+	.blackSecondTittle{
+		font-size: 40px;
+	}
+
+	.cguTexte{
+		font-size: 28px;
+	}
+
+	.cguDot{
+		font-size: 28px;
+	}
+
+	#cguGroup{
+		width: 90%;
+	}
+
+	.cguSize{
+		width: 90%;
+	}
+
+	#lastCGUTexte{
+		font-size: 28px;
+	}
+
+}

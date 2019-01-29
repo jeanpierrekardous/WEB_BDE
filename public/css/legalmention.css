@@ -43,3 +43,31 @@
 .Center{
 	text-align: center;
 }
+
+@media screen and (max-width: 1224px)
+{
+	#rightsTittles{
+		font-size: 50px;
+	}
+
+	.rightsTittlesSecond{
+		font-size: 40px;
+	}
+
+	.rightsTexte{
+		font-size: 28px;
+	}
+
+	#rightsGroup{
+		width: 90%;
+	}
+
+	.rightsArticles{
+		width: 90%;
+	}
+
+	.lastRightsTexte{
+		font-size: 28px;
+	}
+
+}

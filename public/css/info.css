@@ -54,3 +54,36 @@
 	width: 425px;
 	height: 350px;
 }
+
+@media screen and (max-width: 1224px)
+{
+	#infoTittle{
+		font-size: 50px;
+	}
+
+	.secondTittle{
+		font-size: 40px;
+	}
+
+	.infoTexte{
+		font-size: 28px;
+	}
+
+	#infoGroup{
+		width: 90%;
+	}
+
+	.infoSize{
+		width: 90%;
+	}
+
+	.infoDot{
+		font-size: 28px;
+	}
+
+	#infoMap{
+	width: 625px;
+	height: 450px;
+}
+}
+

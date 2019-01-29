@@ -6,6 +6,7 @@
 
 @section('contenu')
 	<section id="cGVGroup">
+		<article class="cGVSize">
 		<h2 id="cGVTittle">Conditions générales de vente</h2>
 		<p class="cGVTexte Center">
 			La société Cesi, 30 rue Cambronne, 75015 Paris, au Capital Social de 1,1M€<br> 
@@ -18,6 +19,7 @@
 		<p class="cGVTexte Center">
 			D'une part, Et la personne physique ou morale procédant à l’achat de produits ou services de la société, Ci-après, « l’Acheteur », ou « le Client » D’autre part, Il a été exposé et convenu ce qui suit : 
 		</p>
+		</article>
 		<article class="cGVSize">
 				<h2 class="blackSecondTittle">PREAMBULE</h2>
 

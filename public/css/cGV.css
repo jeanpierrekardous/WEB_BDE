@@ -52,6 +52,32 @@
 	margin: 10px 0 10px 0;
 }
 
+@media screen and (max-width: 1224px)
+{
+	#cGVTittle{
+		font-size: 50px;
+	}
+
+	.blackSecondTittle{
+		font-size: 40px;
+	}
+
+	.cGVTexte{
+		font-size: 28px;
+	}
+
+	#cGVGroup{
+		width: 90%;
+	}
+
+	.cGVSize{
+		width: 90%;
+	}
+
+	#lastCGVTexte{
+		font-size: 28px;
+	}
+}
 
 
 

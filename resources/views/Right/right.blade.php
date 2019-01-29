@@ -6,8 +6,8 @@
 @section('contenu')
 <!-- Here, we create the Legal Notice -->
     <section id="rightsGroup">
-        <h1 id="rightsTittles">Mentions légales</h1>
         <article class="rightsArticles">
+            <h1 id="rightsTittles">Mentions légales</h1>
     		<h2 class="rightsTittlesSecond">Éditeur : Association CESI</h2>
     		<p class="rightsTexte Center">
         		SIREN : 775 722 572 <br />

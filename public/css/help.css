@@ -47,3 +47,30 @@
 	width: 100%;
 	margin: auto;
 }
+
+@media screen and (max-width: 1224px)
+{
+	#helpTittle{
+		font-size: 50px;
+	}
+
+	.secondTittle{
+		font-size: 40px;
+	}
+
+	.helpTexte{
+		font-size: 28px;
+	}
+
+	#helpGroup{
+		width: 90%;
+	}
+
+	.helpSize{
+		width: 90%;
+	}
+
+	#lastTexte{
+		font-size: 28px;
+	}
+}

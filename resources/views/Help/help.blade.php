@@ -6,9 +6,9 @@
 
 @section('contenu')
 	<section id="helpGroup">
-		<h1 id="helpTittle">Aide</h1>
-		<!-- Here, there are questions that users ask us -->
 		<article class="helpSize">
+			<h1 id="helpTittle">Aide</h1>
+		<!-- Here, there are questions that users ask us -->
 			<h3 class="secondTittle">Que dois-je faire si j'ai perdu mon mot de passe ? </h3> <br />
 			<p class="helpTexte"> Si le mot de passe a été perdu, il suffit de nous envoyer un mail avec votre nom, prénom et la localisation du centre</p><br />
 		</article>
