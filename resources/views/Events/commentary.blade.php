@@ -6,6 +6,7 @@
 
 @section('contenu')
 	<section id="eventGroup">
+		<!-- We check if they have a session -->
 		<?php
 		if(empty(session('email'))){
 		?>

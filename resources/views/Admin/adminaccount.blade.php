@@ -31,6 +31,7 @@
 			@endforeach
 		</table>
 		<h2 id="titleAddUser">Ajouter un utilisateur</h2>
+		<!-- We open the form -->
 		{!! Form::open(['url' => url('admin/'), 'id' => 'signupFormAdmin']) !!}
 			{!! Form::label('firstname', 'Entrer votre prénom :') !!}
 			{!! Form::text('firstname', null, array('autocomplete' => 'off', 'id' => 'firstname', 'spellcheck' => 'false')) !!}

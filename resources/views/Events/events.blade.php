@@ -17,6 +17,7 @@
 		else{
 		?>
 			<section id="flexEvent">
+				<!-- We add an article for each events add -->
 				@foreach($resultEvents as $resultEvents)
 					@if($resultEvents->nom != null)
 						<article class="eventListAll">
