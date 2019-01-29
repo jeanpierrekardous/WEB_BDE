@@ -23,18 +23,18 @@
 							<a href="events/<?php echo $resultEvents->ID_evenement_officiel; ?>" class="linkEvents">
 							<h2 class="titleEvents"><?php echo $resultEvents->nom; ?></h2>
 							<?php echo"<img src='" . $resultEvents->basePhoto . "' alt='pictureEvent' class='picturesEvent'>"; ?>
-							<p class="descriptionEvent">
+							<p class="descriptionEvent fontRes">
 								<?php echo $resultEvents->description; ?>
 							</p>
-							<p class="dateEvent">
+							<p class="dateEvent fontRes">
 								Date de l'évènement : <br><br> 
 								<?php echo $resultEvents->date; ?>
 							</p>
-							<p class="freeEvent">
+							<p class="freeEvent fontRes">
 								Évènement : 
 								<?php echo $resultEvents->type; ?>
 							</p>
-							<p class="frequencyEvent">
+							<p class="frequencyEvent fontRes">
 								Fréquence :
 								<?php echo $resultEvents->frequence; ?>
 							</p>
@@ -48,24 +48,24 @@
 							<?php
 							if ($compte == 1) {
 							?>
-								<p class="signuptoeventalready">Déjà Inscrit</p>
+								<p class="signuptoeventalready fontRes">Déjà Inscrit</p>
 							<?php
 							}
 							else{
 							?>
 								<a href="signup/events/<?php echo $resultEvents->ID_evenement_officiel; ?>" class="linkSignupEvents">
-									<p class="signuptoevent">S'inscrire</p>
+									<p class="signuptoevent fontRes">S'inscrire</p>
 								</a>
 							<?php
 							}
 							if (session('role') == 'admin') {
 							?>
-								<a href="{{url('events/delete/' . $resultEvents->ID_evenement_officiel)}}" class="linkDeleteEventOne"><p class="deleteEvent">SUPRIMMER</p></a>
+								<a href="{{url('events/delete/' . $resultEvents->ID_evenement_officiel)}}" class="linkDeleteEventOne"><p class="deleteEvent fontRes">SUPRIMMER</p></a>
 							<?php
 							}
 							else if(session('role') == 'cesi'){
 							?>
-								<a href="{{url('events/signal/' . $resultEvents->ID_evenement_officiel)}}" class="linkDeleteEventOne"><p class="deleteEvent">SIGNALER</p></a>
+								<a href="{{url('events/signal/' . $resultEvents->ID_evenement_officiel)}}" class="linkDeleteEventOne"><p class="deleteEvent fontRes">SIGNALER</p></a>
 							<?php
 							}
 							?>

@@ -37,7 +37,7 @@
 			<div id="listComment">
 				@foreach($comment as $comments)
 				<article class="commentaryFlex">
-					<p class="commentAll">
+					<p class="commentAll fontRes">
 						<?php echo $comments->commentaire; ?>
 					</p>
 					<?php

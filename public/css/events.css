@@ -327,3 +327,20 @@
 	padding: 10px;
 	width: 100%;
 }
+@media screen and (max-width: 1224px){
+	.fontRes{
+		font-size: 28px;
+	}
+	#eventTittle, #addpicture, #eventTittle, #eventTittle{
+		width: 70%;
+	}
+	.pLinkDLP{
+		margin-top: 60px;
+	}
+	.eventListAllPicture{
+		height: 600px;
+	}
+	label{
+		font-size: 28px;
+	}
+}

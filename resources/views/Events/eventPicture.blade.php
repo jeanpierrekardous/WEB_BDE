@@ -52,11 +52,11 @@
 						<?php echo"<img src='../" . $pictures->link . "' alt='pictureEvent' class='picturesEvent'>"; ?>
 						<div class="barLikePicturesEvent">
 							<a href="comment/<?php echo $pictures->IDPhotos; ?>" class="linkComment">
-								<p class="comment">COMMENTER</p>
+								<p class="comment fontRes">COMMENTER</p>
 							</a>
 							<div class="likeBareEvent">
 								<a href="like/<?php echo $pictures->IDPhotos; ?>"><img src="../fonts/pictures/like.png" alt="pictureLike" class="likePicture"></a>
-								<p class="vote"><?php echo $pictures->likes; ?>
+								<p class="vote fontRes"><?php echo $pictures->likes; ?>
 								</p>
 							</div>
 						</div>
@@ -64,13 +64,13 @@
 							if ((session('role') == 'cesi') OR (session('role') == 'admin')) {
 							?>
 								<div class="downloadPicture">
-									<a href="{{url($pictures->link)}}" class="linkDLP" download="Picture"><p class="pLinkDLP">Télécharger</p></a>
+									<a href="{{url($pictures->link)}}" class="linkDLP" download="Picture"><p class="pLinkDLP fontRes">Télécharger</p></a>
 								</div>
 							<?php
 							}
 							if (session('role') == 'admin') {
 							?>
-								<a href="{{url('events/delete/picture/' . $pictures->IDPhotos)}}" class="linkDeleteEventPicture"><p class="deletePicturet">SUPRIMMER</p></a>
+								<a href="{{url('events/delete/picture/' . $pictures->IDPhotos)}}" class="linkDeleteEventPicture"><p class="deletePicturet fontRes">SUPRIMMER</p></a>
 							<?php
 							}
 							else if(session('role') == 'cesi'){

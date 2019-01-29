@@ -10,12 +10,12 @@
 		<?php
 		if(empty(session('email'))){
 		?>
-			<a href="login" class="redirectLogin"><p class="connectNeed">Veuillez-vous connecter !</p></a>
+			<a href="login" class="redirectLogin fontRes"><p class="connectNeed">Veuillez-vous connecter !</p></a>
         <?php
 		}
 		else{
 		?>
-			<a href="writeidea" id="addIdea">Ajouter un évenement</a>
+			<a href="writeidea" id="addIdea" class="fontRes">Ajouter un évenement</a>
 		<?php
 		}
 		?>
@@ -25,7 +25,7 @@
 			<?php
 			if(empty(session('email'))){
 			?>
-				<a href="login" class="redirectLogin"><p class="connectNeed">Veuillez-vous connecter !</p></a>
+				<a href="login" class="redirectLogin"><p class="connectNeed fontRes">Veuillez-vous connecter !</p></a>
             <?php
 			}
 			else{
@@ -36,7 +36,7 @@
 							<article class="ideaListAll">
 								<h2 class="titleIdeaList"><?php echo $idea->nom; ?></h2>
 								<?php echo"<img src='" . $idea->image . "' alt='pictureIdea' class='picturesIdea'>"; ?>
-								<p class="descriptionIdea"><?php echo $idea->description; ?></p>
+								<p class="descriptionIdea fontRes"><?php echo $idea->description; ?></p>
 								<div class="barLike">
 									<a href="idea/<?php echo $idea->ID_idee_table ?>"><img src="fonts/pictures/like.png" alt="pictureLike" class="likePicture"></a>
 									<p class="vote"><?php echo $idea->vote; ?>
@@ -46,7 +46,7 @@
 									<?php
 									if (session('role') == 'admin') {
 									?>
-										<a href="idea/delete/<?php echo $idea->ID_idee_table ?>" class="linkDeleteIdea"><p class="deleteIdea">SUPRIMMER</p></a>
+										<a href="idea/delete/<?php echo $idea->ID_idee_table ?>" class="linkDeleteIdea"><p class="deleteIdea fontRes">SUPRIMMER</p></a>
 										<a href="idea/add/event/<?php echo $idea->ID_idee_table ?>" class="linkAddIdeaToEvent"><img src="{{url('fonts/pictures/add.png')}}" alt="ajouter" class="addIdeaToEvent"></a>
 									<?php
 									}
