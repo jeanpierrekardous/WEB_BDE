@@ -82,8 +82,8 @@
 		    </nav>
 		    <!-- title and sub-title -->
 		    <div id="titlePresentation">
-		        <h1>Bureau des élèves</h1>
-		        <h2>Site événementiel du CESI avec une boutique en ligne</h2>
+		        <h1 id="titleBurger">Bureau des élèves</h1>
+		        <h2 id="secondTitleBurger">Site événementiel du CESI avec une boutique en ligne</h2>
 		    </div>
 		</header>
     	<!-- The main components of our home page in our website are in this following section -->
@@ -91,12 +91,12 @@
     		<!-- It's the menu on the left of the page -->
 			<nav id="band">
 			    <!-- In the following section there are the name of the menu like CCONTACT, EVENEMENT... With the little picture on the left of the name  -->
-			    <ul>
-			        <li id="bodermake"><a href="{{url('admin/account')}}"><i class="fas fa-user-plus"></i></i> Gérer les comptes</a></li>
+			    <ul >
+			        <li id="bodermake"><a href="{{url('admin/account')}}" id="ideaBurger"><i class="fas fa-user-plus"></i></i> Gérer les comptes</a></li>
 			    </ul>
 			    <!-- Here, it's the link to facebook, youtube and instagram in order to follow the CESI and the BDE -->
 			    <div id="headerLink">
-			        <p class="second">Retrouvez-nous&nbsp;sur&nbsp;:</p>
+			        <p class="second" id="paragrapheBurger">Retrouvez-nous&nbsp;sur&nbsp;:</p>
 			        <div id="image">
 			            <a href="https://www.facebook.com/BDECesiLyon/" target="_Blank">
 			                <img src="{{url('fonts/pictures/logo_facebook.PNG')}}" alt="logo_facebook">
@@ -128,26 +128,26 @@
 		    <p class="delimitor">
 		        &nbsp;
 		    </p>
-		     <a href="{{url('CGU')}}" class="legalMention"><p class="information_legal">
+		     <a href="{{url('CGU')}}" class="legalMention"><p class="information_legal disparition">
 		        Conditions générales d'utilisation
 		    </p></a>
-		    <p class="delimitor">
+		    <p class="delimitor disparition">
 		        &nbsp;
 		    </p>
-		    <p class="information_legal">
+		    <p class="information_legal disparition">
 		        19 Avenue Guy de Collongue 69130 Ecully France <br />
 		        Copyright 2019 © BDE cesi Lyon | Tous droits réservés
 		    </p>
-		    <p class="delimitor">
+		    <p class="delimitor disparition">
 		        &nbsp;
 		    </p>
-		    <a href="{{url('right')}}" class="legalMention"><p class="information_legal">
+		    <a href="{{url('right')}}" class="legalMention"><p class="information_legal disparition">
 		        Mentions légales
 		    </p></a>
-		     <p class="delimitor">
+		     <p class="delimitor disparition">
 		        &nbsp;
 		    </p>
-		    <a href="{{url('PPD')}}" class="legalMention"><p class="information_legal">
+		    <a href="{{url('PPD')}}" class="legalMention"><p class="information_legal disparition">
 		        Politique de protection des données
 		    </p></a>
 		</footer>
