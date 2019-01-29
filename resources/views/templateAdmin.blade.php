@@ -125,7 +125,7 @@
 		    <a href="{{url('CGV')}}" class="legalMention"><p class="information_legal disparition">
 		       Condition générale de vente
 		    </p></a> 
-		    <p class="delimitor">
+		    <p class="delimitor disparition">
 		        &nbsp;
 		    </p>
 		     <a href="{{url('CGU')}}" class="legalMention"><p class="information_legal disparition">
