@@ -51,6 +51,34 @@
 					?>
 		            <li><a href="{{url('help')}}">Aide <i class="fas fa-question-circle"></i></a></li>
 		        </ul>
+		        <ul id="hamberger">
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+				</ul>
+				<ul id="flexboxmenuResponsive">
+		            <!-- Menu(login...) -->
+		            <?php
+					if(empty(session('email'))){
+					?>
+						<li id="connexionBurger"><a href="{{url('login')}}">Connexion</a></li>
+		            	<li id="inscriptionBurger"><a href="{{url('signup')}}">Inscription</a></li>
+		            <?php
+					}
+					else{
+						if (session('role')=='admin') {
+						?>
+							<li id="adminBurger"><a href="{{url('admin')}}">Admin</a></li>
+						<?php
+						}
+					?>
+						<li id="welcomeBurger">Bonjour <?php echo session('name'); ?> !</li>
+						<li id="deconnecionBurger"><a href="{{url('logout')}}">Déconnexion</a></li>
+					<?php
+					}
+					?>
+		            <li id="helpBurger"><a href="{{url('help')}}">Aide <i class="fas fa-question-circle"></i></a></li>
+		        </ul>
 		    </nav>
 		    <!-- title and sub-title -->
 		    <div id="titlePresentation">
@@ -86,6 +114,14 @@
     	</section>
 		<!-- Footer with the legal mentions, the phone number if you have problems and the copyright -->
 		<footer id="footerHome">
+			<select name="rightBurger" id="doobleCheeseBurger" onchange="tripleCheeseBurger(this.value);">
+				<option value="copyright"> Copyright 2019 © BDE cesi Lyon | Tous droits réservés</option>
+	           <option value="CGV">Condition générale de vente</option>
+	           <option value="CGU">
+		        Conditions générales d'utilisation</option>
+	           <option value="legalMention">Mentions légales</option>
+	           <option value="PPD">Politique de protection des données</option>
+       		</select>
 		    <a href="{{url('CGV')}}" class="legalMention"><p class="information_legal">
 		       Condition générale de vente
 		    </p></a> 
@@ -118,5 +154,23 @@
 		<script type="text/javascript" src="{{url('js/jquery-3.3.1.min.js')}}"></script>
 		<script type="text/javascript" src="{{url('js/menu.js')}}"></script>
 		<script type="text/javascript" src="{{url('js/tab.js')}}"></script>
+		<script>
+			function tripleCheeseBurger(value){
+				switch(value){
+					case "CGV":
+						 window.location.href="{{url('CGV')}}";
+					break;
+					case "CGU":
+						 window.location.href="{{url('CGU')}}";
+					break;
+					case "legalMention":
+						 window.location.href="{{url('right')}}";
+					break;
+					case "PPD":
+						 window.location.href="{{url('PPD')}}";
+					break;
+				}
+			}
+		</script>
     </body>
 </html>

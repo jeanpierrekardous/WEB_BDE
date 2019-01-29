@@ -71,7 +71,7 @@
 						<?php
 						}
 					?>
-						<li id="welcome welcolmeBurger">Bonjour <?php echo session('name'); ?> !</li>
+						<li id="welcomeBurger">Bonjour <?php echo session('name'); ?> !</li>
 						<li id="deconnecionBurger"><a href="{{url('logout')}}">Déconnexion</a></li>
 					<?php
 					}
