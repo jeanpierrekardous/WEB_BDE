@@ -167,3 +167,13 @@ h3{
 	border-radius: 10px;
 	border: 1px dashed #000000;
 }
+.addToPanier{
+	color: #000000;
+	border-radius: 10px;
+	border: 2px solid green;
+	padding: 10px;
+}
+.addToPanier:hover{
+	text-decoration: none;
+	background-color: green;
+}

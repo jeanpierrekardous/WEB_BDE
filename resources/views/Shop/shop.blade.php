@@ -31,10 +31,12 @@
 			</div>
 		</div>
 	</article>
+	<!-- We add the search bar to select our item and we add an autocompletion bar th help -->
 	<div id="slideSearchBarre">
 		<div id="sortBy">
 			<div id="selecte">
 				<p>Tier par :</p>
+				<!-- Form to select the  -->
 				<form method="POST" action="{{url('shop')}}" id="chooseForm">
 					<select name="choose" id="choose">
 						<option value="">A~Z</option>
@@ -57,6 +59,7 @@
 				<p class="commentArticleShop"><?php echo $art->commentaire; ?></p>
 				<p class="miseCSS">Quantités : <?php echo $art->quantite; ?>€</p>
 				<p class="miseCSS margbot">Prix : <?php echo $art->prix; ?>€</p>
+				<a href="{{url('shop/' . $art->IDArticle)}}"><p class="addToPanier">Ajouter au panier</p></a>
 			</article>
 		@endforeach
 	</div>
